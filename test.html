@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.webui-popover/1.2.1/jquery.webui-popover.min.css">
+<script src="https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.webui-popover/1.2.1/jquery.webui-popover.min.js"></script>
+
+<style>
+    .productionlines {
+        display: inline;
+        cursor: pointer;
+    }
+
+    .desc {
+        position: absolute;
+        opacity: 0;
+        visibility: none;
+        width: 150px;
+        border: 5px solid red;
+        margin-left: 60px;
+        margin-top: -50px;
+        z-index: -100;
+    }
+
+    .productionlines:hover .desc {
+        opacity: 1;
+    }
+
+    .action-selected:hover {
+        position: relative;
+        background: url('./common/orange_ring.png') no-repeat center;
+    }
+
+    .desc:after {
+        content: ' ';
+        height: 0;
+        position: absolute;
+        width: 0;
+        border: 10px solid transparent;
+        border-right-color: red;
+        top: 10px;
+        right: 100%;
+        margin-right: 0px;
+        z-index: 11
+    }
+
+    .top-banner {
+        display: flex;
+        width: 100%;
+    }
+
+    .nav {
+        margin: 50px;
+        width: 40% auto;
+    }
+
+    .role-selected:hover {
+        cursor: pointer;
+        background: url('./common/orange_ring.png') no-repeat center;
+        background-color: white;
+    }
+
+
+    .between{
+      border: 0.1px solid gray;
+    margin-left:25px;
+    margin-right:25px;
+    height:100px;
+    width:0.1px;
+    position: relative;
+    }
+
+    .arrow{
+    background: url('./common/aro_bot.png') no-repeat center;
+    position: relative;;
+    top: -9px;
+    left: 21px;
+    width: 9px;
+    height: 9px;
+    }
+
+    .arrow-new {
+    height:120px;
+    }
+
+.line {
+    margin-left:20px;
+    width:2px;
+    background:blue;
+    height:110px;
+    align-content: center;
+}
+.point {
+  width: 0;
+  height: 0;
+  margin-left: 16px;
+  /* border-bottom: 10px solid #3F51B5; */
+  border-top: 5px solid #3F51B5;
+  border-left: 5px solid rgb(255, 255, 255);
+  border-right: 5px solid rgb(255, 255, 255);
+}
+</style>
+
+<body>
+    <div class="top-banner">
+        <div class="nav"><img class="role-selected" src="./common/role_orange.png" /><br/>admin
+            <!-- Animation Begins -->
+            <div class="animated_lines">
+                <!-- Vertical Blend Button Start -->
+                <div class="productionlines">
+                    <img class="action-selected" width="50px" src="./common/orangeNode.png" />
+                    <div class="desc">
+                        <h3>Your title</h3>
+                        <p>Some text here...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="between"></div>
+            <img class="arrow"/>
+            <!-- Vertical Blend Button End -->
+            <div class="animated_lines">
+                <!-- Vertical Blend Button Start -->
+                <div class="productionlines">
+                    <img width="50px" src="./common/orangeNode.png" />
+                    <div class="desc">
+                        <h3>Your title</h3>
+                        <p>Some text here...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav"><img class="role-selected" src="./common/role_blue.png" /><br/>Dev
+            <div class="animated_lines">
+                <!-- Vertical Blend Button Start -->
+                <div class="productionlines">
+                    <img width="50px" src="./common/blueNode.png" />
+                    <div class="desc">
+                        <h3>Your title</h3>
+                        <p>Some text here...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow-new">
+              <div class="line"></div>
+              <div class="point"></div>
+            </div>
+            <!-- Vertical Blend Button End -->
+            <div class="animated_lines">
+                <!-- Vertical Blend Button Start -->
+                <div class="productionlines">
+                    <img width="50px" src="./common/blueNode.png" />
+                    <div class="desc">
+                        <h3>Your title</h3>
+                        <p>Some text here...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav"><img id="role-op" class="role-selected" src="./common/role_red.png" /><br/>Op.</div>
+    </div>
+
+</body>
+<script>
+var content = '<p>This is Operator role.</p><ol><li/><li/></ol>'
+
+$('#role-op').webuiPopover({content:content,trigger:'hover',placement:'right'});
+
+</script>
+
+</html>

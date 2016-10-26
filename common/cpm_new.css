@@ -1,0 +1,606 @@
+ @import "../conceptModel/themes/conceptModel.css";
+ /*
+* IBM Confidential
+* OCO Source Materials
+* (C) Copyright IBM Corp. 2012
+* The source code for this program is not published
+* or otherwise divested of its trade secrets, irrespective
+* of what has been deposited with the U.S. Copyright Office.
+*/ 
+
+
+
+button::-moz-focus-inner {
+border: 0;
+}
+
+
+:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #222;
+  -webkit-font-smoothing: antialiased; /* fix the blurry mess that happens in chrome */
+}
+
+
+
+
+.text {
+	position:absolute;
+	margin: 0;
+	padding: 0;
+	overflow:auto;
+}
+.pageTitle {
+	font-size: 1.5em;
+	font-weight:bold;
+	margin: 0px 0 0 0;
+	position:absolute;
+	top:8px;
+	left:10px;
+	border:0px solid black;
+}
+.pageSubTitle {
+	font-size: inherit;
+	font-weight:normal;
+	margin-top:7px;
+	margin-left:2px;
+}
+.instructions {
+	position: relative;
+	margin: 0; 
+  padding: 0;
+}
+.label {
+	color:#232323;
+	z-index:3;
+}
+.shadowlabel {
+	color:#b59e64;
+}
+.peoplelabel {
+	margin-top:7px;
+	margin-left:2px;
+}
+.applabel {
+	margin-top:7px;
+	margin-left:2px;
+}
+.taskstep {
+	color:white;
+	margin-top:0px;
+	margin-left:0px;
+	text-align:center;
+}
+.taskstepgrey {
+	color:#4b4948;
+	margin-top:0px;
+	margin-left:0px;
+	text-align:center;
+}
+.computertext {
+	margin-top:0px;
+	margin-left:0px;
+	text-align:center;
+}
+.shadowcomputertext {
+	color:#9a9a9a;
+	margin-top:0;
+	margin-left:0;
+	text-align:center;
+}
+.bd_link {
+	/*color:#1122cc; */
+	color:#00649d;
+	margin-top:0;
+	margin-left:0;
+	text-align:center;
+}
+.screenshotbox {
+	background-color:white;
+	border:1px solid black;
+	padding: 5px;
+}
+
+
+h2 {
+	font-size: 1.25em;
+}
+
+h1{
+	 font-size: 1.5em;
+}
+
+
+/* Overall page header */
+.header {
+	border-bottom: 1px solid #54585a;
+	position: relative;
+	padding: 10px;
+	height: 15px;
+}
+
+/* Instruction in the header */
+.header .instructions {
+  position: absolute;
+  left: 20%;
+  top: 0px;
+}
+
+.header .instructions p {
+	padding: 5px 0;
+	margin: 0;
+}
+
+/* Preview images used in the header */
+.ad-preview {
+	height: 50px;
+	padding: 15px 0 15px 90px;
+	background: transparent url( "./App_hover_help.png" ) no-repeat left center;
+}
+
+.acc-preview {
+	height: 50px;
+	padding: 15px 0 15px 90px;
+	background: transparent url( "./Accelerators_hover_help.png" ) no-repeat left center;
+
+}
+
+.sec-preview {
+	height: 50px;
+	padding: 15px 0 15px 90px;
+	background: transparent url( "./Security_hover_help.png" ) no-repeat left center;
+
+}
+
+
+/* Header Breadcrumb Trail */
+.header .trail {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+
+}
+
+/* Crumbs on the trail */
+.header .crumb, .header .crumb:visited {
+	background: transparent url( "./back_chevron.png" ) no-repeat left center;
+	padding: 0 0 0 12px;
+	margin: 5px;
+	text-decoration: none;
+	color: #00649d;
+}
+
+.header .crumb:hover {
+	background-image: url( "./back_chevron_o.png" );
+}
+
+
+.model-text {
+  margin: 1em;
+}
+
+
+.model .loading {
+  position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba( 255,255,255, 0.60);
+	z-index: 100;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99ffffff', endColorstr='#99ffffff',GradientType=0 );
+}
+
+.model .loading .msg {
+  position: absolute;
+	top: 45%;
+	left: 45%;
+	background: #fff;
+	padding: 10px ;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	
+}
+
+.model .loading .icon {
+	background: url(../dijit/themes/claro/images/loadingAnimation.gif) no-repeat center center;
+	width: 20px;
+	height: 20px;
+	margin: 0 5px 0 0;
+	display: inline-block;
+}
+
+.model .hide {
+	display: none;
+}
+
+.model-text p {
+	margin: 0 0 .75em 0;
+}
+
+.model-text h2 {
+  margin: .75em 0 .33em 0;
+}
+
+.model-text h2 a,
+.model-text h2 a:visited,
+.model-text h2 a:active {
+	color: inherit;
+	text-decoration: none;
+}
+
+.model-text h2 a:hover {
+	text-decoration: underline;
+}
+
+.model-text ul {
+	margin: 0 0 0 1em;
+}
+
+.model-text a:visited {
+  color: #06F;
+}
+
+.base{
+	background: url('./common/blank.png') no-repeat center center;
+	position: absolute;
+	padding: 0px 0px 0px 0px;
+	cursor: default;
+	border:0px solid black;
+}
+
+
+.ii{
+	cursor: default;
+	position: absolute;
+	border:0px;
+	z-index: 101;
+	padding: 0px 0px 0px 0px;
+}
+
+
+.plus{
+	background: url('./common/blank.png') no-repeat center center;
+	position: absolute;
+	padding: 0px 0px 0px 0px;
+	cursor: default;
+	z-index:15;
+	border: 0;
+}
+
+.label{
+	background-color: rgba( 255,255,255, 1);
+	width: 31px;
+	height: 15px;
+	position: absolute;
+	padding: 1px 1px 1px 1px;
+	cursor: default;
+	z-index: 12;
+	border:0px solid black;
+	color:#232323;
+}
+
+.mlink{
+	background: url('./common/chevron.png') no-repeat center center;
+	width: 31px;
+	height: 31px;
+	position: absolute;
+	padding: 1px 1px 1px 1px;
+	cursor: default;
+	border: 0;
+	z-index: 14;
+}
+
+/* removed position: absolute; from group .. fixed z problem, broke line position in some cases */
+.group{
+	width: 0px;
+	height: 0px;
+	padding: 1px 1px 1px 1px;
+	cursor: default;
+	border: 1;
+}
+
+
+.line{
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	padding: 0px 0px 0px 0px;
+	border: 0;
+}
+
+
+
+
+
+/* Balls */
+
+
+.ball-blue {
+	background: url('../common/blueNode.png') no-repeat center center;
+	text-align: center;
+	vertical-align: center;
+	width: 43px;
+	height: 43px;
+	position: absolute;
+	padding: 0px 0px 0px 0px;
+	z-index:13;
+	cursor: default;
+}
+
+
+
+.ball-red{
+	background: url('../common/redNode.png') no-repeat center center;
+	text-align: center;
+	vertical-align: center;
+	width: 43px;
+	height: 43px;
+	position: absolute;
+	padding: 0px 0px 0px 0px;
+	z-index:13;
+	cursor: default;
+}
+
+
+
+.ball-orange {
+	background: url('../common/orangeNode.png') no-repeat center center;
+	text-align: center;
+	vertical-align: center;
+	width: 43px;
+	height: 43px;
+	position: absolute;
+	padding: 0px 0px 0px 0px;
+	z-index:13;
+	cursor: default;
+}
+
+.ball-yellow {
+	background: url('../common/yellowNode.png') no-repeat center center;
+	text-align: center;
+	vertical-align: center;
+	width: 43px;
+	height: 43px;
+	position: absolute;
+	padding: 0px 0px 0px 0px;
+	z-index:13;
+	cursor: default;
+}
+
+.ball-green {
+  background: url('../common/greenNode.png') no-repeat center center;
+	text-align: center;
+	vertical-align: center;
+	width: 43px;
+	height: 43px;
+	position: absolute;
+	padding: 0px 0px 0px 0px;
+	z-index:13;
+	cursor: default;
+}
+
+
+
+/* Role Headers */
+.role-blue {
+  position: absolute;
+  background: url('../common/role_blue.png') no-repeat center top;
+  padding: 1px 1px 1px 1px;
+  border-bottom: 0px solid #999;
+  z-index: 13;
+  width: 150px;
+  height: 60px;
+  text-align: center;
+}
+
+
+.role-green {
+  position: absolute;
+  background: url('../common/role_green.png') no-repeat center top;
+  padding: 1px 1px 1px 1px;
+  border-bottom: 0px solid #999;
+  z-index: 13;
+  width: 150px;
+  height: 60px;
+  text-align: center;
+}
+
+.role-orange {
+  position: absolute;
+  background: url('../common/role_orange.png' ) no-repeat center top;
+  padding: 1px 1px 1px 1px;
+  border-bottom: 0px solid #999;
+  z-index: 13;
+  width: 150px;
+  height: 60px;
+  text-align: center;
+}
+
+.role-yellow {
+  position: absolute;
+  background: url('../common/role_yellow.png') no-repeat center top;
+  padding: 1px 1px 1px 1px;
+  border-bottom: 0px solid #999;
+  z-index: 13;
+  width: 150px;
+  height: 60px;
+  text-align: center;
+}
+
+
+.role-red{
+  position: absolute;
+  background: url('../common/role_red.png') no-repeat center top;
+  padding: 1px 1px 1px 1px;
+  border-bottom: 0px solid #999;
+  z-index: 13;
+  width: 150px;
+  height: 60px;
+  text-align: center;
+}
+
+/* CSS settings common to all icons */
+
+.image-hint, 
+.image {
+  position: absolute;
+  z-index: 13;
+}
+
+.image-hint{
+  cursor: default;
+}
+
+
+.icon-hint, 
+.ico {
+  position: absolute;
+  z-index: 13;
+}
+
+.icon-hint{
+  cursor: default;
+}
+
+/* Arrows */
+
+.arrow {
+  position: absolute;
+  z-index: 11;
+}
+
+
+
+/* Printer Styles */
+.print-btn {
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: -26px;
+  border: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url(../common/print_default.png);
+  border: 0px solid black;
+}
+
+.print-btn:hover {
+  background-image: url(../common/print_hover.png);
+}
+
+.print-wrapper {
+  margin: 0 20px;
+}
+
+/* These elements hide while printing */
+.print-wrapper .print-btn,
+.print-wrapper .header .trail,
+.print-wrapper .header .instructions {
+  display: none;
+}
+
+.print-wrapper .header .pageTitle {
+  margin: 0;
+}
+
+.print-area {
+  margin: 20px;
+  max-width: 760px;
+}
+
+.print-area h1 {
+  margin: 1em 0 .5em 0;
+  padding: .5em 0 0 0;
+  border-top: 1px solid #ccc;
+  background-repeat: no-repeat;
+  background-position: left .5em;
+}
+
+.print-area img {
+  margin: 10px;
+  vertical-align: top;
+}
+
+.printOnly {
+  display: none;
+}
+
+.print-area .printOnly {
+  display: inherit;
+}
+
+.print-area .indent {
+  margin-left: 38px;
+}
+
+/* Change the ball size for the headers in the print area.
+
+   For IE 9 it appears to inhert the font color of the class we're attempting to overload 
+   instead of using the body font, thus we need to specify the color here otherwize it's white */
+.print-area .ball-blue {
+	background: url('../common/ball-blue-32.png') no-repeat left .5em;
+  padding-left: 38px;
+  line-height: 32px;
+	position: static;
+	cursor: inherit;
+  color: #333;
+  width: 100%;
+  text-align: left;
+  height: auto;
+}
+
+.print-area .ball-orange {
+	background: url('../common/ball-orange-32.png') no-repeat left .5em;
+  padding-left: 38px;
+  line-height: 32px;
+	position: static;
+	cursor: inherit;
+  width: 100%;
+  text-align: left;
+  height: auto;
+  color: #333;
+}
+
+.print-area .ball-gold {
+	background: url('../common/ball-gold-32.png') no-repeat left .5em;
+  padding-left: 38px;
+  line-height: 32px;
+	position: static;
+	cursor: inherit;
+  width: 100%;
+  text-align: left;
+  height: auto;
+  color: #333;
+}
+
+.print-area .ball-green {
+	background: url('../common/ball-green-32.png') no-repeat left .5em;
+  padding-left: 38px;
+  line-height: 32px;
+	position: static;
+	cursor: inherit;
+  width: 100%;
+  text-align: left;
+  height: auto;
+  color: #333;
+}
+
+.tooltipTop .dijitTooltipConnector {
+  top: 3px;
+}
+
+/* Dojo overload for the flyout */
+body.claro .dijitTooltipContainer {
+  padding: 8px;
+}
