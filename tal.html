@@ -1,0 +1,3518 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <title>Model Template</title><script>var pageInitTS = new Date();</script><link rel="stylesheet" href="dijit/themes/claro/claro.css">
+      <link rel="stylesheet" href="common/cpm_new.css">
+      <link rel="stylesheet" href="conceptModel/themes/StepCard.css"><style>
+/* on-hover add focus ring to orange task */
+.d6e34 .tal-d6e34,
+.d6e34_plus .tal-d6e34,
+.d6e34_mlink .tal-d6e34,
+/* on-hover add focus ring to orange task */
+.d6e60 .tal-d6e60,
+.d6e60_plus .tal-d6e60,
+.d6e60_mlink .tal-d6e60,
+/* on-hover add focus ring to orange task */
+.d6e99 .tal-d6e99,
+.d6e99_plus .tal-d6e99,
+.d6e99_mlink .tal-d6e99,
+/* on-hover add focus ring to orange task */
+.d6e129 .tal-d6e129,
+.d6e129_plus .tal-d6e129,
+.d6e129_mlink .tal-d6e129
+{
+		background: url(./common/orangeNode_focus.png) no-repeat center center;
+		z-index: 13;
+}
+
+/* on-hover add focus ring to green task */
+.d6e186 .tal-d6e186,
+.d6e186_plus .tal-d6e186,
+.d6e186_mlink .tal-d6e186
+{
+		background: url(./common/greenNode_focus.png) no-repeat center center;
+		z-index: 13;
+}
+
+/* on-hover add focus ring to blue task */
+.d6e238 .tal-d6e238,
+.d6e238_plus .tal-d6e238,
+.d6e238_mlink .tal-d6e238,
+/* on-hover add focus ring to blue task */
+.d6e275 .tal-d6e275,
+.d6e275_plus .tal-d6e275,
+.d6e275_mlink .tal-d6e275,
+/* on-hover add focus ring to blue task */
+.d6e290 .tal-d6e290,
+.d6e290_plus .tal-d6e290,
+.d6e290_mlink .tal-d6e290,
+/* on-hover add focus ring to blue task */
+.d6e306 .tal-d6e306,
+.d6e306_plus .tal-d6e306,
+.d6e306_mlink .tal-d6e306,
+/* on-hover add focus ring to blue task */
+.d6e331 .tal-d6e331,
+.d6e331_plus .tal-d6e331,
+.d6e331_mlink .tal-d6e331
+{
+		background: url(./common/blueNode_focus.png) no-repeat center center;
+		z-index: 13;
+}
+</style><style>
+	
+	
+	.model {
+	position: relative;
+	min-height: 600px;
+	}
+
+	
+	.wrapper{
+	width: 800px;
+	height: 600px;
+	border-bottom: 1px solid #54585a;
+	}
+	
+	
+	.mask{
+	background: transparent;
+	position: absolute;
+	min-height: 600px;
+	min-width: 800px;
+	z-index: 2;
+	}
+
+	
+	
+
+.tal-d6e3_in{
+background: white;color: black;opacity: 1;
+
+text-align: center; 
+}
+
+
+/* label style for  tal-d6e3  */
+.tal-d6e3{
+background: transparent;
+left: 475px; 
+top: -25px; 
+height: 22px;
+width: 150px;
+line-height: 18px;
+z-index: 14;
+border: 1;
+}
+
+
+	
+.tal-d6e8{
+  top: -34px;
+  left: -1px;
+  height: 601px;
+  width: 802px;
+  line-height: 20px;
+  z-index: 1;
+  visibility: hidden; display: none;opacity: 0; 
+
+
+
+}
+
+
+
+
+
+	
+
+.tal-d6e8{
+background: url(./imgs_tal/default_desaturated.png) no-repeat center center;
+}
+
+
+
+.tal-d6e14_in{
+background: white;color: black;opacity: 1;
+
+text-align: center; 
+}
+
+
+/* label style for  tal-d6e14  */
+.tal-d6e14{
+background: transparent;
+left: -33.5px; 
+top: 33px; 
+height: 22px;
+width: 100px;
+line-height: 15px;
+z-index: 14;
+border: 1;
+}
+
+
+	
+.tal-d6e11{
+  top: 10px;
+  left: 116.5px;
+  height: 33px;
+  width: 33px;
+  line-height: 20px;
+  z-index: 13;
+  opacity: 1;
+
+
+
+}
+
+
+
+
+.d6e11_plus_0{
+position: relative;
+border:0px;
+height: 1px;
+width: 1px;
+border:0px solid black;
+z-index: 1;
+padding: 0px 0px 0px 0px;
+}
+
+.d6e11 .tal-d6e11_plus_0{
+background: url( ./common/plus.png ) no-repeat center center;
+top: 1px;
+left: 29px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+.d6e11_plus_0 .tal-d6e11_plus_0 {
+background: url( ./common/minus.png ) no-repeat center center;
+top: 1px;
+left: 29px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+
+
+	
+
+.tal-d6e11{
+background: url(./common/role_orange.png) no-repeat center center;
+}
+
+
+.d6e11 .tal-d6e11{
+background: url(./common/role_orange.png) no-repeat center center;
+z-index: 13;
+}
+.d6e11_plus_0 .tal-d6e11 {
+background: url(./common/role_orange.png) no-repeat center center;
+z-index: 13;
+}
+
+
+
+.tal-d6e20{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e20_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 76px;
+left: 58px;
+width: 140px;
+height: 1px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+	
+
+.tal-d6e19{
+	z-index: 12;opacity: 1;
+width: 0px; height: 0px;  top: 0px; left: 0px; background:transparent; padding: 0 0 0 0; margin: 0 0 0 0; 
+}
+
+
+.tal-d6e19_box{
+position: absolute; 
+left: 58px; 
+top: 76px; 
+width:0px; height:1px; z-index: 12;opacity: 1;
+
+}
+
+
+
+
+
+
+
+
+
+.tal-d6e26_in{
+background: white;color: black;opacity: 1;
+
+text-align: center; 
+}
+
+
+/* label style for  tal-d6e26  */
+.tal-d6e26{
+background: transparent;
+left: -37.5px; 
+top: 25px; 
+height: 22px;
+width: 100px;
+line-height: 18px;
+z-index: 14;
+border: 1;
+}
+
+
+
+
+
+.tal-d6e29{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e29_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 153px;
+left: 63.5px;
+width: 1px;
+height: 30px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+.tal-d6e29_aro{
+background: url(./common/aro_bot.png) no-repeat center;
+position: absolute;
+top: 175px;
+left: 59.5px;
+width: 9px;
+height: 9px;
+border: 0px solid black;
+z-index: 12;
+}
+	
+.tal-d6e24{
+  top: 101px;
+  left: 51.5px;
+  height: 20px;
+  width: 25px;
+  line-height: 20px;
+  z-index: 13;
+  opacity: 1;
+
+
+
+}
+
+
+
+
+.d6e24_plus_0{
+position: relative;
+border:0px;
+height: 1px;
+width: 1px;
+border:0px solid black;
+z-index: 1;
+padding: 0px 0px 0px 0px;
+}
+
+.d6e24 .tal-d6e24_plus_0{
+background: url( ./common/plus.png ) no-repeat center center;
+top: -5.5px;
+left: 21px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+.d6e24_plus_0 .tal-d6e24_plus_0 {
+background: url( ./common/minus.png ) no-repeat center center;
+top: -5.5px;
+left: 21px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+
+
+	
+
+.tal-d6e24{
+background: url(./imgs_tal/resultSheet.png) no-repeat center center;
+}
+
+
+.d6e24 .tal-d6e24{
+background: url(./imgs_tal/resultSheet.png) no-repeat center center;
+z-index: 13;
+}
+.d6e24_plus_0 .tal-d6e24 {
+background: url(./imgs_tal/resultSheet.png) no-repeat center center;
+z-index: 13;
+}
+
+
+.tal-d6e36_in{
+background: white;color: black;opacity: 1;
+
+text-align: center; 
+}
+
+
+/* label style for  tal-d6e36  */
+.tal-d6e36{
+background: transparent;
+left: -13.5px; 
+top: 43px; 
+height: 22px;
+width: 70px;
+line-height: 18px;
+z-index: 14;
+border: 1;
+}
+
+
+
+
+
+.tal-d6e41{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e41_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 258px;
+left: 63.5px;
+width: 1px;
+height: 40px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+.tal-d6e41_aro{
+background: url(./common/aro_bot.png) no-repeat center;
+position: absolute;
+top: 290px;
+left: 59.5px;
+width: 9px;
+height: 9px;
+border: 0px solid black;
+z-index: 12;
+}
+	
+.tal-d6e34{
+  top: 188px;
+  left: 42.5px;
+  height: 43px;
+  width: 43px;
+  line-height: 20px;
+  z-index: 15;
+  opacity: 1;
+
+
+
+}
+
+
+
+
+.d6e34_plus_0{
+position: relative;
+border:0px;
+height: 1px;
+width: 1px;
+border:0px solid black;
+z-index: 1;
+padding: 0px 0px 0px 0px;
+}
+
+.d6e34 .tal-d6e34_plus_0{
+background: url( ./common/plus_backing.png ) no-repeat center center;
+top: 6px;
+left: 39px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+.d6e34_plus_0 .tal-d6e34_plus_0 {
+background: url( ./common/minus_backing.png ) no-repeat center center;
+top: 6px;
+left: 39px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+.d6e34_plus_0 .tal-d6e34 {
+background: url(./common/orangeNode_focus.png) no-repeat center center;
+z-index: 15;
+}
+
+
+.tal-d6e52_in{
+background: white;color: black;opacity: 1;
+
+text-align: center; 
+}
+
+
+/* label style for  tal-d6e52  */
+.tal-d6e52{
+background: transparent;
+left: -34px; 
+top: 31px; 
+height: 22px;
+width: 100px;
+line-height: 18px;
+z-index: 14;
+border: 1;
+}
+
+
+
+
+
+.tal-d6e55{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e55_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 361px;
+left: 63.5px;
+width: 1px;
+height: 30px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+.tal-d6e55_aro{
+background: url(./common/aro_bot.png) no-repeat center;
+position: absolute;
+top: 383px;
+left: 59.5px;
+width: 9px;
+height: 9px;
+border: 0px solid black;
+z-index: 12;
+}
+	
+.tal-d6e50{
+  top: 303px;
+  left: 48px;
+  height: 26px;
+  width: 32px;
+  line-height: 20px;
+  z-index: 13;
+  opacity: 1;
+
+
+
+}
+
+
+
+
+.d6e50_plus_0{
+position: relative;
+border:0px;
+height: 1px;
+width: 1px;
+border:0px solid black;
+z-index: 1;
+padding: 0px 0px 0px 0px;
+}
+
+.d6e50 .tal-d6e50_plus_0{
+background: url( ./common/plus.png ) no-repeat center center;
+top: -2.5px;
+left: 28px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+.d6e50_plus_0 .tal-d6e50_plus_0 {
+background: url( ./common/minus.png ) no-repeat center center;
+top: -2.5px;
+left: 28px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+
+
+	
+
+.tal-d6e50{
+background: url(./imgs_tal/workbook_v3.png) no-repeat center center;
+}
+
+
+.d6e50 .tal-d6e50{
+background: url(./imgs_tal/workbook_v3.png) no-repeat center center;
+z-index: 13;
+}
+.d6e50_plus_0 .tal-d6e50 {
+background: url(./imgs_tal/workbook_v3.png) no-repeat center center;
+z-index: 13;
+}
+
+
+.tal-d6e62_in{
+background: white;color: black;opacity: 1;
+
+text-align: center; 
+}
+
+
+/* label style for  tal-d6e62  */
+.tal-d6e62{
+background: transparent;
+left: -28.5px; 
+top: 43px; 
+height: 22px;
+width: 100px;
+line-height: 18px;
+z-index: 14;
+border: 1;
+}
+
+
+
+
+
+.tal-d6e76{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e76_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 114.5px;
+left: 129.5px;
+width: 40px;
+height: 1px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+.tal-d6e76_aro{
+background: url(./common/aro_rit.png) no-repeat center;
+position: absolute;
+top: 110.5px;
+left: 161.5px;
+width: 9px;
+height: 9px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+
+.tal-d6e74{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e74_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 114.5px;
+left: 129.5px;
+width: 1px;
+height: 300px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+
+
+.tal-d6e72{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e72_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 414.5px;
+left: 90.5px;
+width: 40px;
+height: 1px;
+border: 0px solid black;
+z-index: 12;
+}
+
+	
+.tal-d6e60{
+  top: 396px;
+  left: 42.5px;
+  height: 43px;
+  width: 43px;
+  line-height: 20px;
+  z-index: 15;
+  opacity: 1;
+
+
+
+}
+
+
+
+
+.d6e60_plus_0{
+position: relative;
+border:0px;
+height: 1px;
+width: 1px;
+border:0px solid black;
+z-index: 1;
+padding: 0px 0px 0px 0px;
+}
+
+.d6e60 .tal-d6e60_plus_0{
+background: url( ./common/plus_backing.png ) no-repeat center center;
+top: 6px;
+left: 39px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+.d6e60_plus_0 .tal-d6e60_plus_0 {
+background: url( ./common/minus_backing.png ) no-repeat center center;
+top: 6px;
+left: 39px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+.d6e60_plus_0 .tal-d6e60 {
+background: url(./common/orangeNode_focus.png) no-repeat center center;
+z-index: 15;
+}
+
+	
+
+.tal-d6e23{
+	z-index: 12;opacity: 1;
+width: 0px; height: 0px;  top: 0px; left: 0px; background:transparent; padding: 0 0 0 0; margin: 0 0 0 0; 
+}
+
+
+.tal-d6e23_box{
+position: absolute; 
+left: 64px; 
+top: 96px; 
+z-index: 12;opacity: 1;
+
+}
+
+
+
+
+
+
+
+
+
+.tal-d6e84_in{
+background: white;color: black;opacity: 1;
+
+text-align: center; 
+}
+
+
+/* label style for  tal-d6e84  */
+.tal-d6e84{
+background: transparent;
+left: -7.5px; 
+top: 12px; 
+height: 22px;
+width: 100px;
+line-height: 18px;
+z-index: 14;
+border: 1;
+}
+
+
+	
+.tal-d6e82{
+  top: 525px;
+  left: 23px;
+  height: 12px;
+  width: 85px;
+  line-height: 20px;
+  z-index: 13;
+  opacity: 1;
+
+
+
+}
+
+
+
+
+
+	
+
+.tal-d6e82{
+background: url(./imgs_tal/callout2.png) no-repeat center center;
+}
+
+
+
+.tal-d6e91_in{
+background: white;color: black;opacity: 1;
+
+text-align: center; 
+}
+
+
+/* label style for  tal-d6e91  */
+.tal-d6e91{
+background: transparent;
+left: -34px; 
+top: 31px; 
+height: 22px;
+width: 100px;
+line-height: 18px;
+z-index: 14;
+border: 1;
+}
+
+
+
+
+
+.tal-d6e94{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e94_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 159px;
+left: 198.5px;
+width: 1px;
+height: 27px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+.tal-d6e94_aro{
+background: url(./common/aro_bot.png) no-repeat center;
+position: absolute;
+top: 178px;
+left: 194.5px;
+width: 9px;
+height: 9px;
+border: 0px solid black;
+z-index: 12;
+}
+	
+.tal-d6e89{
+  top: 101px;
+  left: 183px;
+  height: 26px;
+  width: 32px;
+  line-height: 20px;
+  z-index: 13;
+  opacity: 1;
+
+
+
+}
+
+
+
+
+.d6e89_plus_0{
+position: relative;
+border:0px;
+height: 1px;
+width: 1px;
+border:0px solid black;
+z-index: 1;
+padding: 0px 0px 0px 0px;
+}
+
+.d6e89 .tal-d6e89_plus_0{
+background: url( ./common/plus.png ) no-repeat center center;
+top: -2.5px;
+left: 28px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+.d6e89_plus_0 .tal-d6e89_plus_0 {
+background: url( ./common/minus.png ) no-repeat center center;
+top: -2.5px;
+left: 28px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+
+
+	
+
+.tal-d6e89{
+background: url(./imgs_tal/workbook_v3.png) no-repeat center center;
+}
+
+
+.d6e89 .tal-d6e89{
+background: url(./imgs_tal/workbook_v3.png) no-repeat center center;
+z-index: 13;
+}
+.d6e89_plus_0 .tal-d6e89 {
+background: url(./imgs_tal/workbook_v3.png) no-repeat center center;
+z-index: 13;
+}
+
+
+.tal-d6e101_in{
+background: white;color: black;opacity: 1;
+
+text-align: center; 
+}
+
+
+/* label style for  tal-d6e101  */
+.tal-d6e101{
+background: transparent;
+left: -13.5px; 
+top: 43px; 
+height: 22px;
+width: 70px;
+line-height: 18px;
+z-index: 14;
+border: 1;
+}
+
+
+
+
+
+.tal-d6e106{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e106_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 261px;
+left: 198.5px;
+width: 1px;
+height: 40px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+.tal-d6e106_aro{
+background: url(./common/aro_bot.png) no-repeat center;
+position: absolute;
+top: 293px;
+left: 194.5px;
+width: 9px;
+height: 9px;
+border: 0px solid black;
+z-index: 12;
+}
+	
+.tal-d6e117{
+  top: 206px;
+  left: 152.5px;
+  height: 19px;
+  width: 22px;
+  line-height: 20px;
+  z-index: 13;
+  opacity: 1;
+
+
+
+}
+
+
+
+
+
+	
+
+.tal-d6e117{
+background: url(./imgs_tal/iterate-arrow.png) no-repeat center center;
+}
+
+	
+.tal-d6e99{
+  top: 191px;
+  left: 177.5px;
+  height: 43px;
+  width: 43px;
+  line-height: 20px;
+  z-index: 15;
+  opacity: 1;
+
+
+
+}
+
+
+
+
+.d6e99_plus_0{
+position: relative;
+border:0px;
+height: 1px;
+width: 1px;
+border:0px solid black;
+z-index: 1;
+padding: 0px 0px 0px 0px;
+}
+
+.d6e99 .tal-d6e99_plus_0{
+background: url( ./common/plus_backing.png ) no-repeat center center;
+top: 6px;
+left: 39px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+.d6e99_plus_0 .tal-d6e99_plus_0 {
+background: url( ./common/minus_backing.png ) no-repeat center center;
+top: 6px;
+left: 39px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+.d6e99_plus_0 .tal-d6e99 {
+background: url(./common/orangeNode_focus.png) no-repeat center center;
+z-index: 15;
+}
+
+
+.tal-d6e121_in{
+background: white;color: black;opacity: 1;
+
+text-align: center; 
+}
+
+
+/* label style for  tal-d6e121  */
+.tal-d6e121{
+background: transparent;
+left: -36.5px; 
+top: 29px; 
+height: 22px;
+width: 100px;
+line-height: 18px;
+z-index: 14;
+border: 1;
+}
+
+
+
+
+
+.tal-d6e124{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e124_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 362px;
+left: 198.5px;
+width: 1px;
+height: 30px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+.tal-d6e124_aro{
+background: url(./common/aro_bot.png) no-repeat center;
+position: absolute;
+top: 384px;
+left: 194.5px;
+width: 9px;
+height: 9px;
+border: 0px solid black;
+z-index: 12;
+}
+	
+.tal-d6e119{
+  top: 306px;
+  left: 185.5px;
+  height: 24px;
+  width: 27px;
+  line-height: 20px;
+  z-index: 13;
+  opacity: 1;
+
+
+
+}
+
+
+
+
+.d6e119_plus_0{
+position: relative;
+border:0px;
+height: 1px;
+width: 1px;
+border:0px solid black;
+z-index: 1;
+padding: 0px 0px 0px 0px;
+}
+
+.d6e119 .tal-d6e119_plus_0{
+background: url( ./common/plus.png ) no-repeat center center;
+top: -3.5px;
+left: 23px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+.d6e119_plus_0 .tal-d6e119_plus_0 {
+background: url( ./common/minus.png ) no-repeat center center;
+top: -3.5px;
+left: 23px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+
+
+	
+
+.tal-d6e119{
+background: url(./imgs_tal/coded_program.png) no-repeat center center;
+}
+
+
+.d6e119 .tal-d6e119{
+background: url(./imgs_tal/coded_program.png) no-repeat center center;
+z-index: 13;
+}
+.d6e119_plus_0 .tal-d6e119 {
+background: url(./imgs_tal/coded_program.png) no-repeat center center;
+z-index: 13;
+}
+
+
+.tal-d6e131_in{
+background: white;color: black;opacity: 1;
+
+text-align: center; 
+}
+
+
+/* label style for  tal-d6e131  */
+.tal-d6e131{
+background: transparent;
+left: -28.5px; 
+top: 43px; 
+height: 22px;
+width: 100px;
+line-height: 18px;
+z-index: 14;
+border: 1;
+}
+
+
+
+
+
+.tal-d6e148{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e148_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 115.5px;
+left: 274.5px;
+width: 40px;
+height: 1px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+.tal-d6e148_aro{
+background: url(./common/aro_rit.png) no-repeat center;
+position: absolute;
+top: 111.5px;
+left: 306.5px;
+width: 9px;
+height: 9px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+
+.tal-d6e146{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e146_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 115.5px;
+left: 274.5px;
+width: 1px;
+height: 300px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+
+
+.tal-d6e144{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e144_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 415.5px;
+left: 225.5px;
+width: 50px;
+height: 1px;
+border: 0px solid black;
+z-index: 12;
+}
+
+	
+.tal-d6e129{
+  top: 397px;
+  left: 177.5px;
+  height: 43px;
+  width: 43px;
+  line-height: 20px;
+  z-index: 15;
+  opacity: 1;
+
+
+
+}
+
+
+
+
+.d6e129_plus_0{
+position: relative;
+border:0px;
+height: 1px;
+width: 1px;
+border:0px solid black;
+z-index: 1;
+padding: 0px 0px 0px 0px;
+}
+
+.d6e129 .tal-d6e129_plus_0{
+background: url( ./common/plus_backing.png ) no-repeat center center;
+top: 6px;
+left: 39px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+.d6e129_plus_0 .tal-d6e129_plus_0 {
+background: url( ./common/minus_backing.png ) no-repeat center center;
+top: 6px;
+left: 39px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+.d6e129_plus_0 .tal-d6e129 {
+background: url(./common/orangeNode_focus.png) no-repeat center center;
+z-index: 15;
+}
+
+	
+
+.tal-d6e88{
+	z-index: 12;opacity: 1;
+width: 0px; height: 0px;  top: 0px; left: 0px; background:transparent; padding: 0 0 0 0; margin: 0 0 0 0; 
+}
+
+
+.tal-d6e88_box{
+position: absolute; 
+left: 199px; 
+top: 96px; 
+z-index: 12;opacity: 1;
+
+}
+
+
+
+
+
+
+
+
+	
+
+.tal-d6e10{
+	z-index: 12;opacity: 1;
+width: 0px; height: 0px;  top: 0px; left: 0px; background:transparent; padding: 0 0 0 0; margin: 0 0 0 0; 
+}
+
+
+.tal-d6e10_box{
+position: absolute; 
+left: 133px; 
+top: 5px; 
+width:0px; height:0px; z-index: 12;opacity: 1;
+
+}
+
+
+
+
+
+
+
+
+
+.tal-d6e157_in{
+background: white;color: black;opacity: 1;
+
+text-align: center; 
+}
+
+
+/* label style for  tal-d6e157  */
+.tal-d6e157{
+background: transparent;
+left: -7.5px; 
+top: 12px; 
+height: 22px;
+width: 100px;
+line-height: 18px;
+z-index: 14;
+border: 1;
+}
+
+
+	
+.tal-d6e155{
+  top: 525px;
+  left: 155px;
+  height: 12px;
+  width: 85px;
+  line-height: 20px;
+  z-index: 13;
+  opacity: 1;
+
+
+
+}
+
+
+
+
+
+	
+
+.tal-d6e155{
+background: url(./imgs_tal/callout2.png) no-repeat center center;
+}
+
+
+
+.tal-d6e166_in{
+background: white;color: black;opacity: 1;
+
+text-align: center; 
+}
+
+
+/* label style for  tal-d6e166  */
+.tal-d6e166{
+background: transparent;
+left: -33.5px; 
+top: 33px; 
+height: 22px;
+width: 100px;
+line-height: 15px;
+z-index: 14;
+border: 1;
+}
+
+
+	
+.tal-d6e163{
+  top: 10px;
+  left: 383.5px;
+  height: 33px;
+  width: 33px;
+  line-height: 20px;
+  z-index: 13;
+  opacity: 1;
+
+
+
+}
+
+
+
+
+.d6e163_plus_0{
+position: relative;
+border:0px;
+height: 1px;
+width: 1px;
+border:0px solid black;
+z-index: 1;
+padding: 0px 0px 0px 0px;
+}
+
+.d6e163 .tal-d6e163_plus_0{
+background: url( ./common/plus.png ) no-repeat center center;
+top: 1px;
+left: 29px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+.d6e163_plus_0 .tal-d6e163_plus_0 {
+background: url( ./common/minus.png ) no-repeat center center;
+top: 1px;
+left: 29px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+
+
+	
+
+.tal-d6e163{
+background: url(./common/role_green.png) no-repeat center center;
+}
+
+
+.d6e163 .tal-d6e163{
+background: url(./common/role_green.png) no-repeat center center;
+z-index: 13;
+}
+.d6e163_plus_0 .tal-d6e163 {
+background: url(./common/role_green.png) no-repeat center center;
+z-index: 13;
+}
+
+
+
+.tal-d6e172{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e172_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 76px;
+left: 325px;
+width: 140px;
+height: 1px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+	
+
+.tal-d6e171{
+	z-index: 12;opacity: 1;
+width: 0px; height: 0px;  top: 0px; left: 0px; background:transparent; padding: 0 0 0 0; margin: 0 0 0 0; 
+}
+
+
+.tal-d6e171_box{
+position: absolute; 
+left: 325px; 
+top: 76px; 
+width:0px; height:1px; z-index: 12;opacity: 1;
+
+}
+
+
+
+
+
+
+
+
+
+.tal-d6e178_in{
+background: white;color: black;opacity: 1;
+
+text-align: center; 
+}
+
+
+/* label style for  tal-d6e178  */
+.tal-d6e178{
+background: transparent;
+left: -35px; 
+top: 31px; 
+height: 22px;
+width: 100px;
+line-height: 18px;
+z-index: 14;
+border: 1;
+}
+
+
+
+
+
+.tal-d6e181{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e181_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 112.5px;
+left: 368px;
+width: 55px;
+height: 1px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+.tal-d6e181_aro{
+background: url(./common/aro_rit.png) no-repeat center;
+position: absolute;
+top: 108.5px;
+left: 415px;
+width: 9px;
+height: 9px;
+border: 0px solid black;
+z-index: 12;
+}
+	
+.tal-d6e176{
+  top: 100px;
+  left: 333px;
+  height: 26px;
+  width: 30px;
+  line-height: 20px;
+  z-index: 13;
+  opacity: 1;
+
+
+
+}
+
+
+
+
+.d6e176_plus_0{
+position: relative;
+border:0px;
+height: 1px;
+width: 1px;
+border:0px solid black;
+z-index: 1;
+padding: 0px 0px 0px 0px;
+}
+
+.d6e176 .tal-d6e176_plus_0{
+background: url( ./common/plus.png ) no-repeat center center;
+top: 22px;
+left: -0.5px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+.d6e176_plus_0 .tal-d6e176_plus_0 {
+background: url( ./common/minus.png ) no-repeat center center;
+top: 22px;
+left: -0.5px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+
+
+	
+
+.tal-d6e176{
+background: url(./imgs_tal/application_locked.png) no-repeat center center;
+}
+
+
+.d6e176 .tal-d6e176{
+background: url(./imgs_tal/application_locked.png) no-repeat center center;
+z-index: 13;
+}
+.d6e176_plus_0 .tal-d6e176 {
+background: url(./imgs_tal/application_locked.png) no-repeat center center;
+z-index: 13;
+}
+
+
+.tal-d6e188_in{
+background: white;color: black;opacity: 1;
+
+text-align: center; 
+}
+
+
+/* label style for  tal-d6e188  */
+.tal-d6e188{
+background: transparent;
+left: -28.5px; 
+top: 43px; 
+height: 22px;
+width: 100px;
+line-height: 18px;
+z-index: 14;
+border: 1;
+}
+
+
+
+
+
+.tal-d6e191{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e191_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 112.5px;
+left: 476px;
+width: 1px;
+height: 1px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+.tal-d6e191_aro{
+background: url(.png) no-repeat center;
+position: absolute;
+top: 108.5px;
+left: px;
+width: 9px;
+height: 9px;
+border: 0px solid black;
+z-index: 12;
+}
+	
+.tal-d6e186{
+  top: 94px;
+  left: 428px;
+  height: 43px;
+  width: 43px;
+  line-height: 20px;
+  z-index: 15;
+  opacity: 1;
+
+
+
+}
+
+
+
+
+.d6e186_plus_0{
+position: relative;
+border:0px;
+height: 1px;
+width: 1px;
+border:0px solid black;
+z-index: 1;
+padding: 0px 0px 0px 0px;
+}
+
+.d6e186 .tal-d6e186_plus_0{
+background: url( ./common/plus_backing.png ) no-repeat center center;
+top: 6px;
+left: 39px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+.d6e186_plus_0 .tal-d6e186_plus_0 {
+background: url( ./common/minus_backing.png ) no-repeat center center;
+top: 6px;
+left: 39px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+.d6e186_plus_0 .tal-d6e186 {
+background: url(./common/greenNode_focus.png) no-repeat center center;
+z-index: 15;
+}
+
+	
+
+.tal-d6e175{
+	z-index: 12;opacity: 1;
+width: 0px; height: 0px;  top: 0px; left: 0px; background:transparent; padding: 0 0 0 0; margin: 0 0 0 0; 
+}
+
+
+.tal-d6e175_box{
+position: absolute; 
+left: 328px; 
+top: 113px; 
+z-index: 12;opacity: 1;
+
+}
+
+
+
+
+
+
+
+
+	
+
+.tal-d6e162{
+	z-index: 12;opacity: 1;
+width: 0px; height: 0px;  top: 0px; left: 0px; background:transparent; padding: 0 0 0 0; margin: 0 0 0 0; 
+}
+
+
+.tal-d6e162_box{
+position: absolute; 
+left: 400px; 
+top: 5px; 
+width:0px; height:0px; z-index: 12;opacity: 1;
+
+}
+
+
+
+
+
+
+
+
+
+.tal-d6e207_in{
+background: white;color: black;opacity: 1;
+
+text-align: center; 
+}
+
+
+/* label style for  tal-d6e207  */
+.tal-d6e207{
+background: transparent;
+left: 189.5px; 
+top: 12px; 
+height: 22px;
+width: 100px;
+line-height: 18px;
+z-index: 14;
+border: 1;
+}
+
+
+	
+.tal-d6e205{
+  top: 525px;
+  left: 305px;
+  height: 12px;
+  width: 479px;
+  line-height: 20px;
+  z-index: 13;
+  opacity: 1;
+
+
+
+}
+
+
+
+
+
+	
+
+.tal-d6e205{
+background: url(./imgs_tal/callout3.png) no-repeat center center;
+}
+
+
+
+.tal-d6e215_in{
+background: white;color: black;opacity: 1;
+
+text-align: center; 
+}
+
+
+/* label style for  tal-d6e215  */
+.tal-d6e215{
+background: transparent;
+left: -18.5px; 
+top: 33px; 
+height: 22px;
+width: 70px;
+line-height: 15px;
+z-index: 14;
+border: 1;
+}
+
+
+	
+.tal-d6e212{
+  top: 10px;
+  left: 650.5px;
+  height: 33px;
+  width: 33px;
+  line-height: 20px;
+  z-index: 13;
+  opacity: 1;
+
+
+
+}
+
+
+
+
+.d6e212_plus_0{
+position: relative;
+border:0px;
+height: 1px;
+width: 1px;
+border:0px solid black;
+z-index: 1;
+padding: 0px 0px 0px 0px;
+}
+
+.d6e212 .tal-d6e212_plus_0{
+background: url( ./common/plus.png ) no-repeat center center;
+top: 1px;
+left: 29px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+.d6e212_plus_0 .tal-d6e212_plus_0 {
+background: url( ./common/minus.png ) no-repeat center center;
+top: 1px;
+left: 29px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+
+
+	
+
+.tal-d6e212{
+background: url(./common/role_blue.png) no-repeat center center;
+}
+
+
+.d6e212 .tal-d6e212{
+background: url(./common/role_blue.png) no-repeat center center;
+z-index: 13;
+}
+.d6e212_plus_0 .tal-d6e212 {
+background: url(./common/role_blue.png) no-repeat center center;
+z-index: 13;
+}
+
+
+
+.tal-d6e221{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e221_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 76px;
+left: 592px;
+width: 140px;
+height: 1px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+	
+
+.tal-d6e220{
+	z-index: 12;opacity: 1;
+width: 0px; height: 0px;  top: 0px; left: 0px; background:transparent; padding: 0 0 0 0; margin: 0 0 0 0; 
+}
+
+
+.tal-d6e220_box{
+position: absolute; 
+left: 592px; 
+top: 76px; 
+width:0px; height:1px; z-index: 12;opacity: 1;
+
+}
+
+
+
+
+
+
+
+
+
+.tal-d6e226_in{
+background: white;color: black;opacity: 1;
+
+text-align: center; 
+}
+
+
+/* label style for  tal-d6e226  */
+.tal-d6e226{
+background: transparent;
+left: -33.5px; 
+top: 31px; 
+height: 22px;
+width: 100px;
+line-height: 18px;
+z-index: 14;
+border: 1;
+}
+
+
+
+
+.tal-d6e240_in{
+background: white;color: black;opacity: 1;
+
+text-align: center; 
+}
+
+
+/* label style for  tal-d6e240  */
+.tal-d6e240{
+background: transparent;
+left: -13.5px; 
+top: 43px; 
+height: 22px;
+width: 70px;
+line-height: 18px;
+z-index: 14;
+border: 1;
+}
+
+
+
+
+
+.tal-d6e245{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e245_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 259px;
+left: 599px;
+width: 1px;
+height: 40px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+.tal-d6e245_aro{
+background: url(./common/aro_bot.png) no-repeat center;
+position: absolute;
+top: 291px;
+left: 595px;
+width: 9px;
+height: 9px;
+border: 0px solid black;
+z-index: 12;
+}
+	
+.tal-d6e238{
+  top: 189px;
+  left: 578px;
+  height: 43px;
+  width: 43px;
+  line-height: 20px;
+  z-index: 15;
+  opacity: 1;
+
+
+
+}
+
+
+
+
+.d6e238_plus_0{
+position: relative;
+border:0px;
+height: 1px;
+width: 1px;
+border:0px solid black;
+z-index: 1;
+padding: 0px 0px 0px 0px;
+}
+
+.d6e238 .tal-d6e238_plus_0{
+background: url( ./common/plus_backing.png ) no-repeat center center;
+top: 6px;
+left: -27px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+.d6e238_plus_0 .tal-d6e238_plus_0 {
+background: url( ./common/minus_backing.png ) no-repeat center center;
+top: 6px;
+left: -27px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+.d6e238_plus_0 .tal-d6e238 {
+background: url(./common/blueNode_focus.png) no-repeat center center;
+z-index: 15;
+}
+
+
+.tal-d6e261_in{
+background: white;color: black;opacity: 1;
+
+text-align: center; 
+}
+
+
+/* label style for  tal-d6e261  */
+.tal-d6e261{
+background: transparent;
+left: -37.5px; 
+top: 25px; 
+height: 22px;
+width: 100px;
+line-height: 18px;
+z-index: 14;
+border: 1;
+}
+
+
+
+
+
+.tal-d6e264{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e264_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 356px;
+left: 599px;
+width: 1px;
+height: 25px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+.tal-d6e264_aro{
+background: url(./common/aro_bot.png) no-repeat center;
+position: absolute;
+top: 373px;
+left: 595px;
+width: 9px;
+height: 9px;
+border: 0px solid black;
+z-index: 12;
+}
+	
+.tal-d6e269{
+  top: 209px;
+  left: 224px;
+  height: 104px;
+  width: 351px;
+  line-height: 20px;
+  z-index: 1;
+  visibility: hidden; display: none;opacity: 0; 
+
+
+
+}
+
+
+
+	.d6e259 .tal-d6e269,
+	.d6e259_plus_0 .tal-d6e269{ 
+	visibility: visible; display: block;opacity: 1;
+	
+	
+	}
+
+
+	
+
+.tal-d6e269{
+background: url(./imgs_tal/result-develop.png) no-repeat center center;
+}
+
+	
+.tal-d6e259{
+  top: 304px;
+  left: 587px;
+  height: 20px;
+  width: 25px;
+  line-height: 20px;
+  z-index: 13;
+  opacity: 1;
+
+
+
+}
+
+
+
+
+.d6e259_plus_0{
+position: relative;
+border:0px;
+height: 1px;
+width: 1px;
+border:0px solid black;
+z-index: 1;
+padding: 0px 0px 0px 0px;
+}
+
+.d6e259 .tal-d6e259_plus_0{
+background: url( ./common/plus.png ) no-repeat center center;
+top: -5.5px;
+left: -27px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+.d6e259_plus_0 .tal-d6e259_plus_0 {
+background: url( ./common/minus.png ) no-repeat center center;
+top: -5.5px;
+left: -27px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+
+
+	
+
+.tal-d6e259{
+background: url(./imgs_tal/resultSheet.png) no-repeat center center;
+}
+
+
+.d6e259 .tal-d6e259{
+background: url(./imgs_tal/resultSheet.png) no-repeat center center;
+z-index: 13;
+}
+.d6e259_plus_0 .tal-d6e259 {
+background: url(./imgs_tal/resultSheet.png) no-repeat center center;
+z-index: 13;
+}
+
+
+.tal-d6e277_in{
+background: white;color: black;opacity: 1;
+
+text-align: center; 
+}
+
+
+/* label style for  tal-d6e277  */
+.tal-d6e277{
+background: transparent;
+left: -28.5px; 
+top: 43px; 
+height: 22px;
+width: 100px;
+line-height: 18px;
+z-index: 14;
+border: 1;
+}
+
+
+	
+.tal-d6e275{
+  top: 386px;
+  left: 578px;
+  height: 43px;
+  width: 43px;
+  line-height: 20px;
+  z-index: 15;
+  opacity: 1;
+
+
+
+}
+
+
+
+
+.d6e275_plus_0{
+position: relative;
+border:0px;
+height: 1px;
+width: 1px;
+border:0px solid black;
+z-index: 1;
+padding: 0px 0px 0px 0px;
+}
+
+.d6e275 .tal-d6e275_plus_0{
+background: url( ./common/plus_backing.png ) no-repeat center center;
+top: 6px;
+left: -27px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+.d6e275_plus_0 .tal-d6e275_plus_0 {
+background: url( ./common/minus_backing.png ) no-repeat center center;
+top: 6px;
+left: -27px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+.d6e275_plus_0 .tal-d6e275 {
+background: url(./common/blueNode_focus.png) no-repeat center center;
+z-index: 15;
+}
+
+
+
+.tal-d6e236{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e236_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 164px;
+left: 599.5px;
+width: 1px;
+height: 20px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+.tal-d6e236_aro{
+background: url(./common/aro_bot.png) no-repeat center;
+position: absolute;
+top: 176px;
+left: 595.5px;
+width: 9px;
+height: 9px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+
+.tal-d6e234{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e234_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 164px;
+left: 599.5px;
+width: 67px;
+height: 1px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+
+.tal-d6e292_in{
+background: white;color: black;opacity: 1;
+
+text-align: center; 
+}
+
+
+/* label style for  tal-d6e292  */
+.tal-d6e292{
+background: transparent;
+left: -28.5px; 
+top: 43px; 
+height: 22px;
+width: 100px;
+line-height: 18px;
+z-index: 14;
+border: 1;
+}
+
+
+
+
+
+.tal-d6e303{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e303_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 259px;
+left: 732px;
+width: 1px;
+height: 35px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+.tal-d6e303_aro{
+background: url(./common/aro_bot.png) no-repeat center;
+position: absolute;
+top: 286px;
+left: 728px;
+width: 9px;
+height: 9px;
+border: 0px solid black;
+z-index: 12;
+}
+	
+.tal-d6e290{
+  top: 189px;
+  left: 711px;
+  height: 43px;
+  width: 43px;
+  line-height: 20px;
+  z-index: 15;
+  opacity: 1;
+
+
+
+}
+
+
+
+
+.d6e290_plus_0{
+position: relative;
+border:0px;
+height: 1px;
+width: 1px;
+border:0px solid black;
+z-index: 1;
+padding: 0px 0px 0px 0px;
+}
+
+.d6e290 .tal-d6e290_plus_0{
+background: url( ./common/plus_backing.png ) no-repeat center center;
+top: 6px;
+left: -27px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+.d6e290_plus_0 .tal-d6e290_plus_0 {
+background: url( ./common/minus_backing.png ) no-repeat center center;
+top: 6px;
+left: -27px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+.d6e290_plus_0 .tal-d6e290 {
+background: url(./common/blueNode_focus.png) no-repeat center center;
+z-index: 15;
+}
+
+
+.tal-d6e308_in{
+background: white;color: black;opacity: 1;
+
+text-align: center; 
+}
+
+
+/* label style for  tal-d6e308  */
+.tal-d6e308{
+background: transparent;
+left: -28.5px; 
+top: 43px; 
+height: 22px;
+width: 100px;
+line-height: 18px;
+z-index: 14;
+border: 1;
+}
+
+
+
+
+
+.tal-d6e320{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e320_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 369px;
+left: 732px;
+width: 1px;
+height: 20px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+.tal-d6e320_aro{
+background: url(./common/aro_bot.png) no-repeat center;
+position: absolute;
+top: 381px;
+left: 728px;
+width: 9px;
+height: 9px;
+border: 0px solid black;
+z-index: 12;
+}
+	
+.tal-d6e306{
+  top: 299px;
+  left: 711px;
+  height: 43px;
+  width: 43px;
+  line-height: 20px;
+  z-index: 15;
+  opacity: 1;
+
+
+
+}
+
+
+
+
+.d6e306_plus_0{
+position: relative;
+border:0px;
+height: 1px;
+width: 1px;
+border:0px solid black;
+z-index: 1;
+padding: 0px 0px 0px 0px;
+}
+
+.d6e306 .tal-d6e306_plus_0{
+background: url( ./common/plus_backing.png ) no-repeat center center;
+top: 6px;
+left: -27px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+.d6e306_plus_0 .tal-d6e306_plus_0 {
+background: url( ./common/minus_backing.png ) no-repeat center center;
+top: 6px;
+left: -27px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+.d6e306_plus_0 .tal-d6e306 {
+background: url(./common/blueNode_focus.png) no-repeat center center;
+z-index: 15;
+}
+
+
+
+.tal-d6e328{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e328_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 431px;
+left: 732px;
+width: 1px;
+height: 25px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+.tal-d6e328_aro{
+background: url(./common/aro_bot.png) no-repeat center;
+position: absolute;
+top: 448px;
+left: 728px;
+width: 9px;
+height: 9px;
+border: 0px solid black;
+z-index: 12;
+}
+	
+.tal-d6e323{
+  top: 394px;
+  left: 716.5px;
+  height: 32px;
+  width: 32px;
+  line-height: 20px;
+  z-index: 13;
+  opacity: 1;
+
+
+
+}
+
+
+
+
+.d6e323_plus_0{
+position: relative;
+border:0px;
+height: 1px;
+width: 1px;
+border:0px solid black;
+z-index: 1;
+padding: 0px 0px 0px 0px;
+}
+
+.d6e323 .tal-d6e323_plus_0{
+background: url( ./common/plus.png ) no-repeat center center;
+top: 0.5px;
+left: -27px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+.d6e323_plus_0 .tal-d6e323_plus_0 {
+background: url( ./common/minus.png ) no-repeat center center;
+top: 0.5px;
+left: -27px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+
+
+	
+
+.tal-d6e323{
+background: url(./imgs_tal/charts.png) no-repeat center center;
+}
+
+
+.d6e323 .tal-d6e323{
+background: url(./imgs_tal/charts.png) no-repeat center center;
+z-index: 13;
+}
+.d6e323_plus_0 .tal-d6e323 {
+background: url(./imgs_tal/charts.png) no-repeat center center;
+z-index: 13;
+}
+
+
+.tal-d6e333_in{
+background: white;color: black;opacity: 1;
+
+text-align: center; 
+}
+
+
+/* label style for  tal-d6e333  */
+.tal-d6e333{
+background: transparent;
+left: -28.5px; 
+top: 38px; 
+height: 22px;
+width: 100px;
+line-height: 18px;
+z-index: 14;
+border: 1;
+}
+
+
+	
+.tal-d6e331{
+  top: 461px;
+  left: 711px;
+  height: 43px;
+  width: 43px;
+  line-height: 20px;
+  z-index: 15;
+  opacity: 1;
+
+
+
+}
+
+
+
+
+.d6e331_plus_0{
+position: relative;
+border:0px;
+height: 1px;
+width: 1px;
+border:0px solid black;
+z-index: 1;
+padding: 0px 0px 0px 0px;
+}
+
+.d6e331 .tal-d6e331_plus_0{
+background: url( ./common/plus_backing.png ) no-repeat center center;
+top: 6px;
+left: -27px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+.d6e331_plus_0 .tal-d6e331_plus_0 {
+background: url( ./common/minus_backing.png ) no-repeat center center;
+top: 6px;
+left: -27px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+.d6e331_plus_0 .tal-d6e331 {
+background: url(./common/blueNode_focus.png) no-repeat center center;
+z-index: 15;
+}
+
+
+
+.tal-d6e288{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e288_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 164px;
+left: 732.5px;
+width: 1px;
+height: 20px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+.tal-d6e288_aro{
+background: url(./common/aro_bot.png) no-repeat center;
+position: absolute;
+top: 176px;
+left: 728.5px;
+width: 9px;
+height: 9px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+
+.tal-d6e286{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e286_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 164px;
+left: 666.5px;
+width: 67px;
+height: 1px;
+border: 0px solid black;
+z-index: 12;
+}
+
+
+
+
+.tal-d6e232{
+opacity: 1;
+}
+
+
+
+
+.tal-d6e232_line{
+background: url(./common/blank.png) repeat center;
+background-color: #9a9a9a;
+position: absolute;
+top: 155px;
+left: 666.5px;
+width: 1px;
+height: 10px;
+border: 0px solid black;
+z-index: 12;
+}
+
+	
+.tal-d6e224{
+  top: 97px;
+  left: 650.5px;
+  height: 26px;
+  width: 33px;
+  line-height: 20px;
+  z-index: 13;
+  opacity: 1;
+
+
+
+}
+
+
+
+
+.d6e224_plus_0{
+position: relative;
+border:0px;
+height: 1px;
+width: 1px;
+border:0px solid black;
+z-index: 1;
+padding: 0px 0px 0px 0px;
+}
+
+.d6e224 .tal-d6e224_plus_0{
+background: url( ./common/plus.png ) no-repeat center center;
+top: -2.5px;
+left: -27px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+.d6e224_plus_0 .tal-d6e224_plus_0 {
+background: url( ./common/minus.png ) no-repeat center center;
+top: -2.5px;
+left: -27px;
+height: 31px;
+width: 31px;
+position: relative;
+z-index: 100;
+}
+
+
+
+	
+
+.tal-d6e224{
+background: url(./imgs_tal/application_unlocked.png) no-repeat center center;
+}
+
+
+.d6e224 .tal-d6e224{
+background: url(./imgs_tal/application_unlocked.png) no-repeat center center;
+z-index: 13;
+}
+.d6e224_plus_0 .tal-d6e224 {
+background: url(./imgs_tal/application_unlocked.png) no-repeat center center;
+z-index: 13;
+}
+
+	
+
+.tal-d6e211{
+	z-index: 12;opacity: 1;
+width: 0px; height: 0px;  top: 0px; left: 0px; background:transparent; padding: 0 0 0 0; margin: 0 0 0 0; 
+}
+
+
+.tal-d6e211_box{
+position: absolute; 
+left: 667px; 
+top: 5px; 
+width:0px; height:0px; z-index: 12;opacity: 1;
+
+}
+
+
+
+
+
+
+
+</style></head>
+   <body class="claro">
+      <div class="wrapper" role="presentation">
+         <div class="header" role="complementary" aria-label="./model/@title">
+            <h1 class="pageTitle">Text Analytics Application Lifecycle</h1>
+         </div>
+         <div role="main" aria-label="Interactive Model" tabindex="-1" class="model ">
+            <div class="mask" role="navigation"><span></span><a class="print-btn" target="_new" aria-label="Print model and steps" title="Print model and steps" href="tal.html?print=true&amp;noframes=true"><img alt="Print model and steps" src="common/blank.gif"></a></div>
+            <div class="label tal-d6e3">
+               <div class="tal-d6e3_in">Hover to animate.</div>
+            </div>
+            <div class="image-hint tal-d6e8" role="img"></div>
+            <div class="group tal-d6e10">
+               <div class="tal-d6e10_box"><img width="0" height="0" src="./common/blank.gif" alt=""></div>
+               <div class="image-hint tal-d6e11" role="img" tabindex="2" aria-label="ApplicationDeveloper _ Role flyout">
+                  <div style="position: absolute; top: 10 px; left: 10 px; height:1px; width:1px; z-index:100;">
+                     <div class="plus tal-d6e11_plus_0"></div>
+                  </div>
+                  <div class="label tal-d6e14">
+                     <div class="tal-d6e14_in">Application <br>Developer
+                     </div>
+                  </div>
+               </div>
+               <div class="group tal-d6e19">
+                  <div class="tal-d6e19_box"><img width="0" height="1" src="./common/blank.gif" alt=""></div>
+                  <div class="line tal-d6e20" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                     <div class="line tal-d6e20_line"></div>
+                     <div class="arrow tal-d6e20_aro"></div>
+                  </div>
+               </div>
+               <div class="group tal-d6e23">
+                  <div class="tal-d6e23_box"><img width="0" height="0" src="./common/blank.gif" alt=""></div>
+                  <div class="image-hint tal-d6e24" role="img" tabindex="3" aria-label="Input data _ Input data is the data collection that you want to analyze.">
+                     <div style="position: absolute; top: 101 px; left: 101 px; height:1px; width:1px; z-index:100;">
+                        <div class="plus tal-d6e24_plus_0"></div>
+                     </div>
+                     <div class="label tal-d6e26">
+                        <div class="tal-d6e26_in">Input data</div>
+                     </div>
+                  </div>
+                  <div class="line tal-d6e29" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                     <div class="line tal-d6e29_line"></div>
+                     <div class="arrow tal-d6e29_aro"></div>
+                  </div>
+                  <div class="ball-orange tal-d6e34" role="img" tabindex="4" aria-label="CreateSubset _ Create a document collection that is both representative of the larger data set and that is small enough to be downloaded to your development work station.In the Applications tab, run either the *Data Subset* or *Data Sampling* application.To convert the JSON or CSV output of these applications to a format that the Text Analytics Workflow can use, see *Getting sample data to use with Eclipse tools*.">
+                     <div style="position: absolute; top: 188 px; left: 188 px; height:1px; width:1px; z-index:100;">
+                        <div class="plus tal-d6e34_plus_0"></div>
+                     </div>
+                     <div class="label tal-d6e36">
+                        <div class="tal-d6e36_in">Create <br>Subset
+                        </div>
+                     </div>
+                  </div>
+                  <div class="line tal-d6e41" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                     <div class="line tal-d6e41_line"></div>
+                     <div class="arrow tal-d6e41_aro"></div>
+                  </div>
+                  <div class="image-hint tal-d6e50" role="img" tabindex="5" aria-label="Sample data _ The sampled data is the defined subset of your input data that you want to use to develop your text analytics application.">
+                     <div style="position: absolute; top: 303 px; left: 303 px; height:1px; width:1px; z-index:100;">
+                        <div class="plus tal-d6e50_plus_0"></div>
+                     </div>
+                     <div class="label tal-d6e52">
+                        <div class="tal-d6e52_in">Sample data</div>
+                     </div>
+                  </div>
+                  <div class="line tal-d6e55" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                     <div class="line tal-d6e55_line"></div>
+                     <div class="arrow tal-d6e55_aro"></div>
+                  </div>
+                  <div class="ball-orange tal-d6e60" role="img" tabindex="6" aria-label="Download _ Download your sampled data from the cluster to your local system where you run the Eclipse tools.In the Files tab, select the sampled data.Click Download.">
+                     <div style="position: absolute; top: 396 px; left: 396 px; height:1px; width:1px; z-index:100;">
+                        <div class="plus tal-d6e60_plus_0"></div>
+                     </div>
+                     <div class="label tal-d6e62">
+                        <div class="tal-d6e62_in">Download</div>
+                     </div>
+                  </div>
+                  <div class="line tal-d6e72" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                     <div class="line tal-d6e72_line"></div>
+                     <div class="arrow tal-d6e72_aro"></div>
+                     <div class="line tal-d6e74" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                        <div class="line tal-d6e74_line"></div>
+                        <div class="arrow tal-d6e74_aro"></div>
+                        <div class="line tal-d6e76" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                           <div class="line tal-d6e76_line"></div>
+                           <div class="arrow tal-d6e76_aro"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="image-hint tal-d6e82" role="img" tabindex="6" aria-label="Web Console _ ">
+                  <div class="label tal-d6e84">
+                     <div class="tal-d6e84_in">Web Console</div>
+                  </div>
+               </div>
+               <div class="group tal-d6e88">
+                  <div class="tal-d6e88_box"><img width="0" height="0" src="./common/blank.gif" alt=""></div>
+                  <div class="image-hint tal-d6e89" role="img" tabindex="8" aria-label="Local data _ Use this local subsetted data that you just downloaded to develop an extractor in Eclipse tools.">
+                     <div style="position: absolute; top: 101 px; left: 101 px; height:1px; width:1px; z-index:100;">
+                        <div class="plus tal-d6e89_plus_0"></div>
+                     </div>
+                     <div class="label tal-d6e91">
+                        <div class="tal-d6e91_in">Local data</div>
+                     </div>
+                  </div>
+                  <div class="line tal-d6e94" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                     <div class="line tal-d6e94_line"></div>
+                     <div class="arrow tal-d6e94_aro"></div>
+                  </div>
+                  <div class="ball-orange tal-d6e99" role="img" tabindex="9" aria-label="DevelopExtractor _ Develop the extractor by using one of the following methods:Create custom extractors,in the BigInsights Eclipse environment with tools that help you develop the AQL code for the extractor.Use the libraries of sample pre-packaged and pre-compiled extractors to extract mentions of specific entities and relationships from input text, such as 'Person', 'Organization', or 'Location'.">
+                     <div style="position: absolute; top: 191 px; left: 191 px; height:1px; width:1px; z-index:100;">
+                        <div class="plus tal-d6e99_plus_0"></div>
+                     </div>
+                     <div class="label tal-d6e101">
+                        <div class="tal-d6e101_in">Develop <br>Extractor
+                        </div>
+                     </div>
+                  </div>
+                  <div class="line tal-d6e106" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                     <div class="line tal-d6e106_line"></div>
+                     <div class="arrow tal-d6e106_aro"></div>
+                  </div>
+                  <div class="image-hint tal-d6e117" role="img"></div>
+                  <div class="image-hint tal-d6e119" role="img" tabindex="10" aria-label="Extractor _ An extractor is a program that analyzes structured data by finding and filtering terms and concepts in the sampled data.">
+                     <div style="position: absolute; top: 306 px; left: 306 px; height:1px; width:1px; z-index:100;">
+                        <div class="plus tal-d6e119_plus_0"></div>
+                     </div>
+                     <div class="label tal-d6e121">
+                        <div class="tal-d6e121_in">Extractor</div>
+                     </div>
+                  </div>
+                  <div class="line tal-d6e124" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                     <div class="line tal-d6e124_line"></div>
+                     <div class="arrow tal-d6e124_aro"></div>
+                  </div>
+                  <div class="ball-orange tal-d6e129" role="img" tabindex="11" aria-label="Publish _ Publish the extractor as a Text Analytics Application.In the Project Explorer Pane, right-click the project name.Click BigInsights Application Publish.Complete the wizard panels, and click Finish.Note: In addition to using the extractor in a Text Analytics application, you can also run it directly by writing your own Java™ program or Jaql script. For more information, see *Running extractors by using the Jaql Text Analytics module* and *Running extractors with the Text Analytics APIs*.">
+                     <div style="position: absolute; top: 397 px; left: 397 px; height:1px; width:1px; z-index:100;">
+                        <div class="plus tal-d6e129_plus_0"></div>
+                     </div>
+                     <div class="label tal-d6e131">
+                        <div class="tal-d6e131_in">Publish</div>
+                     </div>
+                  </div>
+                  <div class="line tal-d6e144" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                     <div class="line tal-d6e144_line"></div>
+                     <div class="arrow tal-d6e144_aro"></div>
+                     <div class="line tal-d6e146" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                        <div class="line tal-d6e146_line"></div>
+                        <div class="arrow tal-d6e146_aro"></div>
+                        <div class="line tal-d6e148" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                           <div class="line tal-d6e148_line"></div>
+                           <div class="arrow tal-d6e148_aro"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="image-hint tal-d6e155" role="img" tabindex="11" aria-label="Eclipse _ ">
+               <div class="label tal-d6e157">
+                  <div class="tal-d6e157_in">Eclipse</div>
+               </div>
+            </div>
+            <div class="group tal-d6e162">
+               <div class="tal-d6e162_box"><img width="0" height="0" src="./common/blank.gif" alt=""></div>
+               <div class="image-hint tal-d6e163" role="img" tabindex="13" aria-label="ApplicationAdministrator _ Role flyout">
+                  <div style="position: absolute; top: 10 px; left: 10 px; height:1px; width:1px; z-index:100;">
+                     <div class="plus tal-d6e163_plus_0"></div>
+                  </div>
+                  <div class="label tal-d6e166">
+                     <div class="tal-d6e166_in">Application <br>Administrator
+                     </div>
+                  </div>
+               </div>
+               <div class="group tal-d6e171">
+                  <div class="tal-d6e171_box"><img width="0" height="1" src="./common/blank.gif" alt=""></div>
+                  <div class="line tal-d6e172" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                     <div class="line tal-d6e172_line"></div>
+                     <div class="arrow tal-d6e172_aro"></div>
+                  </div>
+               </div>
+               <div class="group tal-d6e175">
+                  <div class="tal-d6e175_box"><img width="0" height="0" src="./common/blank.gif" alt=""></div>
+                  <div class="image-hint tal-d6e176" role="img" tabindex="14" aria-label="Application _ A text analytics application is an AQL module or group of AQL modules packaged for users to analyze text in BigInsights cluster nodes. After you publish your application, it becomes part of the InfoSphere BigInsights applications catalog. The published application is located in the Applications tab of the Infosphere BigInsights Console.">
+                     <div style="position: absolute; top: 100 px; left: 100 px; height:1px; width:1px; z-index:100;">
+                        <div class="plus tal-d6e176_plus_0"></div>
+                     </div>
+                     <div class="label tal-d6e178">
+                        <div class="tal-d6e178_in">Application</div>
+                     </div>
+                  </div>
+                  <div class="line tal-d6e181" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                     <div class="line tal-d6e181_line"></div>
+                     <div class="arrow tal-d6e181_aro"></div>
+                  </div>
+                  <div class="ball-green tal-d6e186" role="img" tabindex="15" aria-label="Deploy _ An application administrator deploys the application, which makes it available for other users in the InfoSphere BigInsights Console.In the Applications tab, click the Manage subtab, and then find and select the application.Click Deploy above the list of applications.In the Deploy Applcation window, configure the required parameters and click Deploy.As part of the deploy step, you configure the locations of the external dictionaries and tables that are required by the extractor in this application. To learn more about the formats that are required, see *File formats for external artifacts*.">
+                     <div style="position: absolute; top: 94 px; left: 94 px; height:1px; width:1px; z-index:100;">
+                        <div class="plus tal-d6e186_plus_0"></div>
+                     </div>
+                     <div class="label tal-d6e188">
+                        <div class="tal-d6e188_in">Deploy</div>
+                     </div>
+                  </div>
+                  <div class="line tal-d6e191" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                     <div class="line tal-d6e191_line"></div>
+                     <div class="arrow tal-d6e191_aro"></div>
+                  </div>
+               </div>
+            </div>
+            <div class="image-hint tal-d6e205" role="img" tabindex="15" aria-label="Web Console _ ">
+               <div class="label tal-d6e207">
+                  <div class="tal-d6e207_in">Web Console</div>
+               </div>
+            </div>
+            <div class="group tal-d6e211">
+               <div class="tal-d6e211_box"><img width="0" height="0" src="./common/blank.gif" alt=""></div>
+               <div class="image-hint tal-d6e212" role="img" tabindex="17" aria-label="BusinessAnalyst _ Role flyout">
+                  <div style="position: absolute; top: 10 px; left: 10 px; height:1px; width:1px; z-index:100;">
+                     <div class="plus tal-d6e212_plus_0"></div>
+                  </div>
+                  <div class="label tal-d6e215">
+                     <div class="tal-d6e215_in">Business <br>Analyst
+                     </div>
+                  </div>
+               </div>
+               <div class="group tal-d6e220">
+                  <div class="tal-d6e220_box"><img width="0" height="1" src="./common/blank.gif" alt=""></div>
+                  <div class="line tal-d6e221" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                     <div class="line tal-d6e221_line"></div>
+                     <div class="arrow tal-d6e221_aro"></div>
+                  </div>
+               </div>
+               <div class="image-hint tal-d6e224" role="img" tabindex="18" aria-label="Application _ The deployed application is ready for running and visualizing.">
+                  <div style="position: absolute; top: 97 px; left: 97 px; height:1px; width:1px; z-index:100;">
+                     <div class="plus tal-d6e224_plus_0"></div>
+                  </div>
+                  <div class="label tal-d6e226">
+                     <div class="tal-d6e226_in">Application</div>
+                  </div>
+               </div>
+               <div class="line tal-d6e232" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                  <div class="line tal-d6e232_line"></div>
+                  <div class="arrow tal-d6e232_aro"></div>
+                  <div class="line tal-d6e234" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                     <div class="line tal-d6e234_line"></div>
+                     <div class="arrow tal-d6e234_aro"></div>
+                     <div class="line tal-d6e236" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                        <div class="line tal-d6e236_line"></div>
+                        <div class="arrow tal-d6e236_aro"></div>
+                        <div class="ball-blue tal-d6e238" role="img" tabindex="19" aria-label="Run JaqlWorkflow _ The Text Analytics application in the Applications tab runs as a *Jaql* based Oozie workflow behind the scenes.In the Applications tab, click the Execute subtab, and then click the application icon.Configure the input data location, set the output view to run on all views, and select the output directory location.Optionally, select Advanced options to specify the input data format, delimiter character for CSV types, specify the output type, and choose the language.Click Run to run the application on the cluster. Optionally, you can enter a name for the run in the Execution Name field.">
+                           <div style="position: absolute; top: 189 px; left: 189 px; height:1px; width:1px; z-index:100;">
+                              <div class="plus tal-d6e238_plus_0"></div>
+                           </div>
+                           <div class="label tal-d6e240">
+                              <div class="tal-d6e240_in">Run Jaql <br>Workflow
+                              </div>
+                           </div>
+                        </div>
+                        <div class="line tal-d6e245" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                           <div class="line tal-d6e245_line"></div>
+                           <div class="arrow tal-d6e245_aro"></div>
+                        </div>
+                        <div class="image-hint tal-d6e259" role="img" tabindex="20" aria-label="Result data _ The result data is the output from the application. The JSON file exists in the output directory you specified when running the application.">
+                           <div style="position: absolute; top: 304 px; left: 304 px; height:1px; width:1px; z-index:100;">
+                              <div class="plus tal-d6e259_plus_0"></div>
+                           </div>
+                           <div class="label tal-d6e261">
+                              <div class="tal-d6e261_in">Result data</div>
+                           </div>
+                        </div>
+                        <div class="line tal-d6e264" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                           <div class="line tal-d6e264_line"></div>
+                           <div class="arrow tal-d6e264_aro"></div>
+                        </div>
+                        <div class="image-hint tal-d6e269" role="img"></div>
+                        <div class="ball-blue tal-d6e275" role="img" tabindex="21" aria-label="Indexing _ Use the functions of indexing to index and search the output from the JSON records that correspond to the extracted name-value fields in the data.">
+                           <div style="position: absolute; top: 386 px; left: 386 px; height:1px; width:1px; z-index:100;">
+                              <div class="plus tal-d6e275_plus_0"></div>
+                           </div>
+                           <div class="label tal-d6e277">
+                              <div class="tal-d6e277_in">Indexing</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="line tal-d6e286" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                     <div class="line tal-d6e286_line"></div>
+                     <div class="arrow tal-d6e286_aro"></div>
+                     <div class="line tal-d6e288" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                        <div class="line tal-d6e288_line"></div>
+                        <div class="arrow tal-d6e288_aro"></div>
+                        <div class="ball-blue tal-d6e290" role="img" tabindex="22" aria-label="Run BigSheetsFunction _ In the BigSheets tab, add a Function sheet. Then provide the values to the required input arguments. For more information on creating a function sheet, see *Types of sheets*.Run the BigSheets workbook or Sheet and use the result Sheet to visualize your results. To learn more about this step, see *Visualizing your result data in charts and maps*.">
+                           <div style="position: absolute; top: 189 px; left: 189 px; height:1px; width:1px; z-index:100;">
+                              <div class="plus tal-d6e290_plus_0"></div>
+                           </div>
+                           <div class="label tal-d6e292">
+                              <div class="tal-d6e292_in">Run BigSheets <br>Function
+                              </div>
+                           </div>
+                        </div>
+                        <div class="line tal-d6e303" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                           <div class="line tal-d6e303_line"></div>
+                           <div class="arrow tal-d6e303_aro"></div>
+                        </div>
+                        <div class="ball-blue tal-d6e306" role="img" tabindex="23" aria-label="Visualize _ Visualize the result data in BigSheets.If the data is produced through the result of running a text analytics application in BigSheets, it is already a Sheet that can be visualized.If the result data is generated through the Jaql workflow, the data must be imported into BigSheets as a new workbook, and then visualized. The workbook that contains Sheets and the accompanying visualizations on this result data can also be viewed on the InfoSphere BigInsights Dashboard.">
+                           <div style="position: absolute; top: 299 px; left: 299 px; height:1px; width:1px; z-index:100;">
+                              <div class="plus tal-d6e306_plus_0"></div>
+                           </div>
+                           <div class="label tal-d6e308">
+                              <div class="tal-d6e308_in">Visualize</div>
+                           </div>
+                        </div>
+                        <div class="line tal-d6e320" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                           <div class="line tal-d6e320_line"></div>
+                           <div class="arrow tal-d6e320_aro"></div>
+                        </div>
+                        <div class="image-hint tal-d6e323" role="img" tabindex="24" aria-label=" _ By using the BigSheets functions, you can model, filter, explore, and chart the extracted data.">
+                           <div style="position: absolute; top: 394 px; left: 394 px; height:1px; width:1px; z-index:100;">
+                              <div class="plus tal-d6e323_plus_0"></div>
+                           </div>
+                        </div>
+                        <div class="line tal-d6e328" style="width: 0px; height: 0px; position:absolute; top: 0px; left: 0px; background:black; padding: 0 0 0 0; margin: 0 0 0 0; ">
+                           <div class="line tal-d6e328_line"></div>
+                           <div class="arrow tal-d6e328_aro"></div>
+                        </div>
+                        <div class="ball-blue tal-d6e331" role="img" tabindex="24" aria-label="View Dashboard _ Display BigSheets workbooks and charts in the *dashboard*, which are represented by widgets. Each widget has a URL link that you can use to share the workbook or chart. View the data in the dashboard to see multiple graphical charts at the same time, and compare results across the views.">
+                           <div style="position: absolute; top: 461 px; left: 461 px; height:1px; width:1px; z-index:100;">
+                              <div class="plus tal-d6e331_plus_0"></div>
+                           </div>
+                           <div class="label tal-d6e333">
+                              <div class="tal-d6e333_in">View Dashboard</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="loading hide" aria-labelledby="ldrText" role="dialog"><span id="ldrText" class="msg"></span></div>
+      </div><script src="dojo/dojo.js" data-dojo-config="async: true, isDebug: true,  parseOnLoad: true"></script><script type="text/javascript">
+require( [ "dojo/ready", 
+           "conceptModel/ModelControl",
+           "conceptModel/ModelTooltip",
+           "conceptModel/StepCard",
+           "dojo/dom-class",
+           "dojo/query",
+           "dojo/dom-attr",
+           "dijit/popup",
+           "dojo/_base/lang"
+            ], function( ready, ModelControl, TooltipDialog, StepCard, domClass, $, domAttr, popup, lang){
+  ready(function(){ 
+
+	
+	
+
+  	var control = new ModelControl( ["d6e8", "d6e11", "d6e11_plus_0", "d6e20", "d6e24", "d6e24_plus_0", "d6e29", "d6e34", "d6e34_plus_0", "d6e41", "d6e50", "d6e50_plus_0", "d6e55", "d6e60", "d6e60_plus_0", "d6e72", "d6e74", "d6e76", "d6e82", "d6e89", "d6e89_plus_0", "d6e94", "d6e99", "d6e99_plus_0", "d6e106", "d6e117", "d6e119", "d6e119_plus_0", "d6e124", "d6e129", "d6e129_plus_0", "d6e144", "d6e146", "d6e148", "d6e155", "d6e163", "d6e163_plus_0", "d6e172", "d6e176", "d6e176_plus_0", "d6e181", "d6e186", "d6e186_plus_0", "d6e191", "d6e205", "d6e212", "d6e212_plus_0", "d6e221", "d6e224", "d6e224_plus_0", "d6e232", "d6e234", "d6e236", "d6e238", "d6e238_plus_0", "d6e245", "d6e259", "d6e259_plus_0", "d6e264", "d6e269", "d6e275", "d6e275_plus_0", "d6e286", "d6e288", "d6e290", "d6e290_plus_0", "d6e303", "d6e306", "d6e306_plus_0", "d6e320", "d6e323", "d6e323_plus_0", "d6e328", "d6e331", "d6e331_plus_0", "dummyval"], "tal-" ),
+		  						card=null, data = null;
+
+
+
+	
+	
+		control.preloadImages(["./imgs_tal/default_desaturated.png", "./common/role_orange.png", "./imgs_tal/resultSheet.png", "./imgs_tal/workbook_v3.png", "./imgs_tal/callout2.png", "./imgs_tal/workbook_v3.png", "./imgs_tal/iterate-arrow.png", "./imgs_tal/coded_program.png", "./imgs_tal/callout2.png", "./common/role_green.png", "./imgs_tal/application_locked.png", "./imgs_tal/callout3.png", "./common/role_blue.png", "./imgs_tal/application_unlocked.png", "./imgs_tal/resultSheet.png", "./imgs_tal/result-develop.png", "./imgs_tal/charts.png", "./common/blank.gif"]);
+	
+		control.preloadImages(["./common/blank.gif"]);
+	
+
+	
+
+	
+	    control.addFlyout( new TooltipDialog( { id:  "flyout-d6e11_plus_0",
+                                            content: "Role flyout", 
+                                            style: "width: 200px;" } ), [ "after", "below-alt" ] );  
+	
+	
+	    control.addFlyout( new TooltipDialog( { id:  "flyout-d6e24_plus_0",
+                                            content: "Input data is the data collection that you want to analyze.", 
+                                            style: "width: 200px;" } ), [ "after", "below-alt" ] );  
+	
+	
+	
+	data = { opening: "Create a document collection that is both representative of the larger data set and that is small enough to be downloaded to your development work station.",
+						 steps: [ { label: "In the Applications tab, run either the *Data Subset* or *Data Sampling* application."}, { label: "To convert the JSON or CSV output of these applications to a format that the Text Analytics Workflow can use, see *Getting sample data to use with Eclipse tools*."} ],
+						closing: "" };
+                                  
+    card = new StepCard( { cardData: data } );
+    
+    //card.firstStepWithImg = 1; 
+    //card.startup();
+    
+	                      
+    control.addFlyout( new TooltipDialog( { id: "flyout-d6e34_plus_0", 
+                                            content: card, 
+                                            style: "width: 250px;"} ), [ "after", "below-alt" ] );
+		card = data = null;
+		
+	
+	    control.addFlyout( new TooltipDialog( { id:  "flyout-d6e50_plus_0",
+                                            content: "The sampled data is the defined subset of your input data that you want to use to develop your text analytics application.", 
+                                            style: "width: 250px;" } ), [ "after", "below-alt" ] );  
+	
+	
+	
+	data = { opening: "Download your sampled data from the cluster to your local system where you run the Eclipse tools.",
+						 steps: [ { label: "In the Files tab, select the sampled data."}, { label: "Click Download."} ],
+						closing: "" };
+                                  
+    card = new StepCard( { cardData: data } );
+    
+    //card.firstStepWithImg = 1; 
+    //card.startup();
+    
+	                      
+    control.addFlyout( new TooltipDialog( { id: "flyout-d6e60_plus_0", 
+                                            content: card, 
+                                            style: "width: 250px;"} ), [ "after", "below-alt" ] );
+		card = data = null;
+		
+	
+	    control.addFlyout( new TooltipDialog( { id:  "flyout-d6e89_plus_0",
+                                            content: "Use this local subsetted data that you just downloaded to develop an extractor in Eclipse tools.", 
+                                            style: "width: 250px;" } ), [ "after", "below-alt" ] );  
+	
+	
+	    control.addFlyout( new TooltipDialog( { id:  "flyout-d6e99_plus_0",
+                                            content: "Develop the extractor by using one of the following methods: <br   ></br> <br   ></br>Create custom extractors,in the BigInsights Eclipse environment with tools that help you develop the AQL code for the extractor. <br   ></br> <br   ></br>Use the libraries of sample pre-packaged and pre-compiled extractors to extract mentions of specific entities and relationships from input text, such as 'Person', 'Organization', or 'Location'.", 
+                                            style: "width: 200px;" } ), [ "after", "below-alt" ] );  
+	
+	
+	    control.addFlyout( new TooltipDialog( { id:  "flyout-d6e119_plus_0",
+                                            content: "An extractor is a program that analyzes structured data by finding and filtering terms and concepts in the sampled data.", 
+                                            style: "width: 250px;" } ), [ "after", "below-alt" ] );  
+	
+	
+	
+	data = { opening: "Publish the extractor as a Text Analytics Application.",
+						 steps: [ { label: "In the Project Explorer Pane, right-click the project name."}, { label: "Click BigInsights Application Publish."}, { label: "Complete the wizard panels, and click Finish."} ],
+						closing: "Note: In addition to using the extractor in a Text Analytics application, you can also run it directly by writing your own Java™ program or Jaql script. For more information, see *Running extractors by using the Jaql Text Analytics module* and *Running extractors with the Text Analytics APIs*." };
+                                  
+    card = new StepCard( { cardData: data } );
+    
+    //card.firstStepWithImg = 1; 
+    //card.startup();
+    
+	                      
+    control.addFlyout( new TooltipDialog( { id: "flyout-d6e129_plus_0", 
+                                            content: card, 
+                                            style: "width: 350px;"} ), [ "after", "below-alt" ] );
+		card = data = null;
+		
+	
+	    control.addFlyout( new TooltipDialog( { id:  "flyout-d6e163_plus_0",
+                                            content: "Role flyout", 
+                                            style: "width: 200px;" } ), [ "after", "below-alt" ] );  
+	
+	
+	    control.addFlyout( new TooltipDialog( { id:  "flyout-d6e176_plus_0",
+                                            content: "A text analytics application is an AQL module or group of AQL modules packaged for users to analyze text in BigInsights cluster nodes. After you publish your application, it becomes part of the InfoSphere BigInsights applications catalog. The published application is located in the Applications tab of the Infosphere BigInsights Console.", 
+                                            style: "width: 250px;" } ), [ "below-alt", "below" ] );  
+	
+	
+	
+	data = { opening: "An application administrator deploys the application, which makes it available for other users in the InfoSphere BigInsights Console.",
+						 steps: [ { label: "In the Applications tab, click the Manage subtab, and then find and select the application."}, { label: "Click Deploy above the list of applications."}, { label: "In the Deploy Applcation window, configure the required parameters and click Deploy."} ],
+						closing: "As part of the deploy step, you configure the locations of the external dictionaries and tables that are required by the extractor in this application. To learn more about the formats that are required, see *File formats for external artifacts*." };
+                                  
+    card = new StepCard( { cardData: data } );
+    
+    //card.firstStepWithImg = 1; 
+    //card.startup();
+    
+	                      
+    control.addFlyout( new TooltipDialog( { id: "flyout-d6e186_plus_0", 
+                                            content: card, 
+                                            style: "width: 350px;"} ), [ "below-alt", "below" ] );
+		card = data = null;
+		
+	
+	    control.addFlyout( new TooltipDialog( { id:  "flyout-d6e212_plus_0",
+                                            content: "Role flyout", 
+                                            style: "width: 200px;" } ), [ "after", "below-alt" ] );  
+	
+	
+	    control.addFlyout( new TooltipDialog( { id:  "flyout-d6e224_plus_0",
+                                            content: "The deployed application is ready for running and visualizing.", 
+                                            style: "width: 200px;" } ), [ "before", "above-alt" ] );  
+	
+	
+	
+	data = { opening: "The Text Analytics application in the Applications tab runs as a *Jaql* based Oozie workflow behind the scenes.",
+						 steps: [ { label: "In the Applications tab, click the Execute subtab, and then click the application icon."}, { label: "Configure the input data location, set the output view to run on all views, and select the output directory location."}, { label: "Optionally, select Advanced options to specify the input data format, delimiter character for CSV types, specify the output type, and choose the language."}, { label: "Click Run to run the application on the cluster. Optionally, you can enter a name for the run in the Execution Name field."} ],
+						closing: "" };
+                                  
+    card = new StepCard( { cardData: data } );
+    
+    //card.firstStepWithImg = 1; 
+    //card.startup();
+    
+	                      
+    control.addFlyout( new TooltipDialog( { id: "flyout-d6e238_plus_0", 
+                                            content: card, 
+                                            style: "width: 350px;"} ), [ "before", "above-alt" ] );
+		card = data = null;
+		
+	
+	    control.addFlyout( new TooltipDialog( { id:  "flyout-d6e259_plus_0",
+                                            content: "The result data is the output from the application. The JSON file exists in the output directory you specified when running the application.", 
+                                            style: "width: 250px;" } ), [ "before", "above-alt" ] );  
+	
+	
+	    control.addFlyout( new TooltipDialog( { id:  "flyout-d6e275_plus_0",
+                                            content: "Use the functions of indexing to index and search the output from the JSON records that correspond to the extracted name-value fields in the data.", 
+                                            style: "width: 250px;" } ), [ "before", "above-alt" ] );  
+	
+	
+	
+	data = { opening: "",
+						 steps: [ { label: "In the BigSheets tab, add a Function sheet. Then provide the values to the required input arguments. For more information on creating a function sheet, see *Types of sheets*."}, { label: "Run the BigSheets workbook or Sheet and use the result Sheet to visualize your results. To learn more about this step, see *Visualizing your result data in charts and maps*."} ],
+						closing: "" };
+                                  
+    card = new StepCard( { cardData: data } );
+    
+    //card.firstStepWithImg = 1; 
+    //card.startup();
+    
+	                      
+    control.addFlyout( new TooltipDialog( { id: "flyout-d6e290_plus_0", 
+                                            content: card, 
+                                            style: "width: 300px;"} ), [ "before", "above-alt" ] );
+		card = data = null;
+		
+	
+	    control.addFlyout( new TooltipDialog( { id:  "flyout-d6e306_plus_0",
+                                            content: "Visualize the result data in BigSheets. <br   ></br> <br   ></br>If the data is produced through the result of running a text analytics application in BigSheets, it is already a Sheet that can be visualized. <br   ></br> <br   ></br>If the result data is generated through the Jaql workflow, the data must be imported into BigSheets as a new workbook, and then visualized. The workbook that contains Sheets and the accompanying visualizations on this result data can also be viewed on the InfoSphere BigInsights Dashboard.", 
+                                            style: "width: 300px;" } ), [ "before", "above-alt" ] );  
+	
+	
+	    control.addFlyout( new TooltipDialog( { id:  "flyout-d6e323_plus_0",
+                                            content: "By using the BigSheets functions, you can model, filter, explore, and chart the extracted data.", 
+                                            style: "width: 200px;" } ), [ "before", "above-alt" ] );  
+	
+	
+	    control.addFlyout( new TooltipDialog( { id:  "flyout-d6e331_plus_0",
+                                            content: "Display BigSheets workbooks and charts in the *dashboard*, which are represented by widgets. Each widget has a URL link that you can use to share the workbook or chart. View the data in the dashboard to see multiple graphical charts at the same time, and compare results across the views.", 
+                                            style: "width: 300px;" } ), [ "before", "above-alt" ] );  
+	
+	
+        
+    
+	
+    // Indicate the time it took to load and hide the loading blocker.																				 
+		TS = new Date();
+    console.log( "All Done: " + (TS.getTime() - pageInitTS.getTime())/1000 + "s" );
+		                  
+		// Everything is ready, time to get the show running                                                                     
+    control.startup();
+                                         
+    } ); // ready
+}); // require
+</script></body>
+</html>
