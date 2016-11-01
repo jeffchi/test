@@ -99,11 +99,19 @@
   border-left: 5px solid rgb(255, 255, 255);
   border-right: 5px solid rgb(255, 255, 255);
 }
+
+.curve{
+  width:500px; height:100px;
+  border:solid 2px #000;
+  border-color:#000 transparent transparent transparent;
+  border-radius: 50%/100px 100px 0 0;
+  float:left;
+}
 </style>
 
 <body>
     <div class="top-banner">
-        <div class="nav"><img class="role-selected" src="./common/role_orange.png" /><br/>admin
+        <div class="nav" data-role="collapsible"><img class="role-selected" src="./common/role_orange.png" /><br/>admin
             <!-- Animation Begins -->
             <div class="animated_lines">
                 <!-- Vertical Blend Button Start -->
@@ -159,11 +167,20 @@
         <div class="nav"><img id="role-op" class="role-selected" src="./common/role_red.png" /><br/>Op.</div>
     </div>
 
+    <div id="popcontent01" style="display:none">
+      <p>This is Operator role.</p><ol><li/><li/></ol>
+    </div>
+
 </body>
 <script>
-var content = '<p>This is Operator role.</p><ol><li/><li/></ol>'
 
-$('#role-op').webuiPopover({content:content,trigger:'hover',placement:'right'});
+/* var popcontent = $('#popcontent01').html(),
+
+$('#role-op').webuiPopover({content:'popcontent',trigger:'hover',placement:'auto'});
+*/
+
+
+$('#role-op').webuiPopover({url:'#popcontent01',trigger:'hover',closeable:"true"});
 
 </script>
 

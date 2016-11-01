@@ -7,10 +7,12 @@ body,h1,h2,h3 {
 	margin: 0;
 }
 
+/*
 a {
 	color: inherit;
 	text-decoration: none;
 }
+*/
 
 img {
 	max-width: 100%;
@@ -22,7 +24,6 @@ Typography
 
 body {
 	font-family: Lato, sans-serif;
-    font-size: 12px;
 	-webkit-font-smoothing: antialiased;
     width: 100%;
 }
@@ -33,6 +34,7 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
+		font-size: 15px;
 }
 /*-----------------------------------------------------------------------------
 Grid
@@ -84,7 +86,7 @@ Grid
 	    width: 50%;
 	    box-sizing: border-box;
 	    padding: 0 20px;
-	}	
+	}
 .col-5 {
     float: left;
     width: 41.66666667%;
@@ -109,6 +111,85 @@ Grid
 	display: none;
 }
 
+/*-----------------------------------------------------------------------------
+Customized
+-----------------------------------------------------------------------------*/
+.header-text{
+	  font-size: 24px;
+}
+
+.inner-col-4 {
+		float: left;
+		width: 33.33333333%;
+		box-sizing: border-box;
+}
+
+.print:hover {
+	background url('./common/print_default.png') no-repeat center;
+	cursor: pointer;
+}
+.action-selected{
+	cursor: pointer;
+}
+.action-selected:hover {
+	background: url('./common/orange_ring.png') no-repeat center;
+}
+
+/*-----------------------------------------------------------------------------
+arrow+lines
+-----------------------------------------------------------------------------*/
+.hor-line-arrow {
+	position: relative;
+	width:100px;
+}
+
+.hor-line {
+	height:1px;
+	width: 95px;
+	background: url('./common/blank_blue.png');
+	margin-top: 25px;
+	overflow: hidden;
+}
+
+.right-arrow {
+	width: 0;
+	height: 0;
+	float:right;
+	margin-top:-5px;
+	/* border-right: 10px solid #3F51B5; */
+	border-left: 5px solid gray;
+	border-top: 5px solid rgb(255, 255, 255);
+	border-bottom: 5px solid rgb(255, 255, 255);
+}
+
+.ver-line-arrow {
+	height:50px;
+	position: relative;
+	text-align: center;
+}
+
+.ver-line {
+	width:1px;
+	background: url('./common/blank_blue.png');
+	height:40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.down-arrow {
+	width: 0;
+	height: 0;
+	margin-left: auto;
+	margin-right:auto;
+	/* border-bottom: 10px solid #3F51B5; */
+	border-top: 5px solid gray;
+	border-left: 5px solid rgb(255, 255, 255);
+	border-right: 5px solid rgb(255, 255, 255);
+}
+
+
+/*-----------------------------------------------------------------------------
+Responsive
+-----------------------------------------------------------------------------*/
 @media all and (min-width: 768px) {
 	.col-6 {
 	    float: left;
