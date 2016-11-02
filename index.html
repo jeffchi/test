@@ -16,11 +16,13 @@
 
   </head>
   <body>
+    <div class="container">
     <div class="row">
       <div class="col-6 header-text">Text Analytics Application Lifecycle</div>
-      <div class="col-1 right"><a href="#"><img class="print" src="./common/print_default.png"/></a></div>
+      <div class="col-1 right"><a href="#"><img id="print_icon" class="print" src="./common/print_hover.png" onClick="window.print()"/></a></div>
   </div>
   <hr/>
+</div>
 
     <div class="section">
         <div class="container">
@@ -49,7 +51,7 @@
                 </div>
                 <div class="inner-col-4">
                   <div class="hor-line-arrow">
-                    <div class="hor-line"></div>
+                    <div class="hor-line line"></div>
                     <div class="right-arrow"></div>
                   </div>
                 </div>
@@ -72,16 +74,15 @@
                   <img id="publish" class="action-selected orange" width="50px" src="./common/orangeNode.png" /><br/>Publish
                 </div>
               </div>
-
-
             </div>
+
             <div class="col-4">
               <div><img id="role-app-admin" src="./common/role_green.png" /><br/>Application<br/>Administrator</div>
               <hr/>
               <div class="container">
-                <div class="col-3">
-                  <div class="hor-line-arrow">
-                    <div class="hor-line"></div>
+                <div class="col-2">
+                  <div class="hor-line-arrow short">
+                    <div class="hor-line shortline"></div>
                     <div class="right-arrow"></div>
                   </div>
                 </div>
@@ -90,11 +91,11 @@
                 </div>
               <div class="col-3">
                 <div class="hor-line-arrow">
-                  <div class="hor-line"></div>
+                  <div class="hor-line line"></div>
                   <div class="right-arrow"></div>
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-4">
                 <img id="deploy" class="action-selected green" width="50px" src="./common/GreenNode.png" /><br/>Deploy
               </div>
             </div>
@@ -123,6 +124,16 @@
 <p>As part of the deploy step, you configure the locations of the external dictionaries and tables that are required by the extractor in this application. To learn more about the formats that are required, see *File formats for external artifacts*.</p></div>
   </body>
   <script>
+
+  /* Print icon change on hover*/
+  $('#print-icon').hover(
+    function(){
+      $(this).attr("src","./common/print_hover.png");
+      }, function(){
+      $(this).attr("src","./common/print_default.png");
+    }
+  );
+
 
   /* inputdata
   */
