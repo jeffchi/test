@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Test Grid">
@@ -14,139 +15,176 @@
     <script src="https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.webui-popover/1.2.1/jquery.webui-popover.min.js"></script>
 
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container">
-    <div class="row">
-      <div class="col-6 header-text">Text Analytics Application Lifecycle</div>
-      <div class="col-1 right"><a href="#"><img id="print_icon" class="print" src="./common/print_hover.png" onClick="window.print()"/></a></div>
-  </div>
-  <hr/>
-</div>
+        <div class="row">
+            <div class="col-6 header-text">Text Analytics Application Lifecycle</div>
+            <div class="col-1 right">
+                <a href="#"><img id="print_icon" class="print" src="./common/print_hover.png" onClick="window.print()" /></a>
+            </div>
+        </div>
+        <hr/>
+    </div>
 
     <div class="section">
         <div class="container">
-         <div class="row">
-            <div class="col-4">
-              <div><img id="role_app_dev" src="./common/role_orange.png" /><br/>Application<br/>Developer</div>
-              <hr/>
-              <div class="container">
-                <div class="inner-col-4">
-                    <img id="input-data" class="action-selected orange" width="50px" src="./common/orangeNode.png" /><br/>Input data
-                    <div class="ver-line-arrow">
-                      <div class="ver-line"></div>
-                      <div class="down-arrow"></div>
+            <div class="row">
+                <div class="col-4">
+                    <div><img id="role_app_dev" src="./common/role_orange.png" /><br/>Application<br/>Developer</div>
+                    <hr/>
+                    <div class="container">
+                        <div class="inner-col-4">
+                            <img id="input-data" class="action-selected orange" width="50px" src="./common/orangeNode.png" /><br/>Input data
+                            <div class="ver-line-arrow">
+                                <div class="ver-line"></div>
+                                <div class="down-arrow"></div>
+                            </div>
+                            <img id="creat-subset" class="action-selected orange" width="50px" src="./common/orangeNode.png" /><br/>Create Subset
+                            <div class="ver-line-arrow">
+                                <div class="ver-line"></div>
+                                <div class="down-arrow"></div>
+                            </div>
+                            <img id="sample-data" class="action-selected orange" width="50px" src="./common/orangeNode.png" /><br/>Sample data
+                            <div class="ver-line-arrow">
+                                <div class="ver-line"></div>
+                                <div class="down-arrow"></div>
+                            </div>
+                            <img id="download" class="action-selected orange" width="50px" src="./common/orangeNode.png" /><br/>Download
+                        </div>
+                        <div class="inner-col-4">
+                            <div class="hor-line-arrow">
+                                <div class="hor-line line"></div>
+                                <div class="right-arrow"></div>
+                            </div>
+                        </div>
+                        <div class="inner-col-4">
+                            <img id="local-data" class="action-selected orange" width="50px" src="./common/orangeNode.png" /><br/>Local data
+                            <div class="ver-line-arrow">
+                                <div class="ver-line"></div>
+                                <div class="down-arrow"></div>
+                            </div>
+                            <img id="develop-extra" class="action-selected orange" width="50px" src="./common/orangeNode.png" /><br/>Develop Extractor
+                            <div class="ver-line-arrow">
+                                <div class="ver-line"></div>
+                                <div class="down-arrow"></div>
+                            </div>
+                            <img id="extractor" class="action-selected orange" width="50px" src="./common/orangeNode.png" /><br/>Extractor
+                            <div class="ver-line-arrow">
+                                <div class="ver-line"></div>
+                                <div class="down-arrow"></div>
+                            </div>
+                            <img id="publish" class="action-selected orange" width="50px" src="./common/orangeNode.png" /><br/>Publish
+                        </div>
                     </div>
-                    <img id="creat-subset" class="action-selected orange" width="50px" src="./common/orangeNode.png" /><br/>Create Subset
-                    <div class="ver-line-arrow">
-                      <div class="ver-line"></div>
-                      <div class="down-arrow"></div>
+                </div>
+
+                <div class="col-4">
+                    <div><img id="role-app-admin" src="./common/role_green.png" /><br/>Application<br/>Administrator</div>
+                    <hr/>
+                    <div class="container">
+                        <div class="col-2">
+                            <div class="hor-line-arrow short">
+                                <div class="hor-line shortline"></div>
+                                <div class="right-arrow"></div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <img id="application" class="action-selected green" width="50px" src="./common/GreenNode.png" /><br/>Application
+                        </div>
+                        <div class="col-3">
+                            <div class="hor-line-arrow">
+                                <div class="hor-line line"></div>
+                                <div class="right-arrow"></div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <img id="deploy" class="action-selected green" width="50px" src="./common/GreenNode.png" /><br/>Deploy
+                        </div>
                     </div>
-                    <img id="sample-data" class="action-selected orange" width="50px" src="./common/orangeNode.png" /><br/>Sample data
-                    <div class="ver-line-arrow">
-                      <div class="ver-line"></div>
-                      <div class="down-arrow"></div>
+
+                </div>
+                <div class="col-4">
+                    <div><img id="role-bus-ana" src="./common/role_blue.png" /><br/>Business<br/>Analyst</div>
+                    <div class="col-12">
+                        <a target="_blank" href="./images/shot.png">
+                            <img id="resizebleimg" src="./images/shot.png"></img>
+                        </a>
                     </div>
-                    <img id="download" class="action-selected orange" width="50px" src="./common/orangeNode.png" /><br/>Download
-                </div>
-                <div class="inner-col-4">
-                  <div class="hor-line-arrow">
-                    <div class="hor-line line"></div>
-                    <div class="right-arrow"></div>
-                  </div>
-                </div>
-                <div class="inner-col-4">
-                  <img id="local-data" class="action-selected orange" width="50px" src="./common/orangeNode.png" /><br/>Local data
-                  <div class="ver-line-arrow">
-                    <div class="ver-line"></div>
-                    <div class="down-arrow"></div>
-                  </div>
-                  <img id="develop-extra" class="action-selected orange" width="50px" src="./common/orangeNode.png" /><br/>Develop Extractor
-                  <div class="ver-line-arrow">
-                    <div class="ver-line"></div>
-                    <div class="down-arrow"></div>
-                  </div>
-                  <img id="extractor" class="action-selected orange" width="50px" src="./common/orangeNode.png" /><br/>Extractor
-                  <div class="ver-line-arrow">
-                    <div class="ver-line"></div>
-                    <div class="down-arrow"></div>
-                  </div>
-                  <img id="publish" class="action-selected orange" width="50px" src="./common/orangeNode.png" /><br/>Publish
-                </div>
-              </div>
-            </div>
+                    <hr/>
 
-            <div class="col-4">
-              <div><img id="role-app-admin" src="./common/role_green.png" /><br/>Application<br/>Administrator</div>
-              <hr/>
-              <div class="container">
-                <div class="col-2">
-                  <div class="hor-line-arrow short">
-                    <div class="hor-line shortline"></div>
-                    <div class="right-arrow"></div>
-                  </div>
                 </div>
-                <div class="col-3">
-                  <img id="application" class="action-selected green" width="50px" src="./common/GreenNode.png" /><br/>Application
-                </div>
-              <div class="col-3">
-                <div class="hor-line-arrow">
-                  <div class="hor-line line"></div>
-                  <div class="right-arrow"></div>
-                </div>
-              </div>
-              <div class="col-4">
-                <img id="deploy" class="action-selected green" width="50px" src="./common/GreenNode.png" /><br/>Deploy
-              </div>
-            </div>
-
-            </div>
-            <div class="col-4">
-              <div><img id="role-bus-ana" src="./common/role_blue.png" /><br/>Business<br/>Analyst</div>
-              <div class="col-12">
-              		<a target="_blank" href="./images/shot.png">
-              		<img id="resizebleimg" src="./images/shot.png"></img>
-              		</a>
-              	</div>
-              <hr/>
-
             </div>
         </div>
     </div>
-  </div>
 
-  <div id="inputdata-content" style="display:none">Input data is the data collection that you want to analyze.</div>
-  <div id="localdata-content" style="display:none">Use this local subsetted data that you just downloaded to develop an extractor in Eclipse tools.</div>
-  <div id="createsubset-content" style="display:none; max-width:300px"><p>Create a document collection that is both representative of the larger data set and that is small enough to be downloaded to your development work station.</p>
-    <ol><li>In the Applications tab, run either the *Data Subset* or *Data Sampling* application.</li><li>To convert the JSON or CSV output of these applications to a format that the Text Analytics Workflow can use, see <a href="#">Getting sample data to use with Eclipse tools</a>.</li></ol></div>
-  <div id="application-content" style="display:none; max-width:300px">A text analytics application is an AQL module or group of AQL modules packaged for users to analyze text in BigInsights cluster nodes. After you publish your application, it becomes part of the InfoSphere BigInsights applications catalog. The published application is located in the Applications tab of the Infosphere BigInsights Console.</div>
-  <div id="deploy-content" style="display:none; max-width:300px"><p>An application administrator deploys the application, which makes it available for other users in the InfoSphere BigInsights Console.</p>
-    <ol>
-      <li>In the Applications tab, click the Manage subtab, and then find and select the application.</li>
-      <li>Click Deploy above the list of applications.</li>
-      <li>In the Deploy Applcation window, configure the required parameters and click Deploy.</li>
-    </ol>
-<p>As part of the deploy step, you configure the locations of the external dictionaries and tables that are required by the extractor in this application. To learn more about the formats that are required, see *File formats for external artifacts*.</p></div>
-  </body>
-  <script>
+    <div class="container">
+        <div class="row">
+            <div>
+              <div class="printTitle">Input Data</div>
+                <div id="inputdata-content" class="hoverContent">Input data is the data collection that you want to analyze.</div>
+              </div>
+            <div class="printTitle">Local Data</div>
+              <div id="localdata-content" class="hoverContent">Use this local subsetted data that you just downloaded to develop an extractor in Eclipse tools.</div>
+            </div>
+            <div id="createsubset-content" class="hoverContent">
+                <p>Create a document collection that is both representative of the larger data set and that is small enough to be downloaded to your development work station.</p>
+                <ol>
+                    <li>In the Applications tab, run either the *Data Subset* or *Data Sampling* application.</li>
+                    <li>To convert the JSON or CSV output of these applications to a format that the Text Analytics Workflow can use, see <a href="#">Getting sample data to use with Eclipse tools</a>.</li>
+                </ol>
+            </div>
+            <div id="application-content" class="hoverContent">A text analytics application is an AQL module or group of AQL modules packaged for users to analyze text in BigInsights cluster nodes. After you publish your application, it becomes part of the InfoSphere BigInsights applications catalog.
+                The published application is located in the Applications tab of the Infosphere BigInsights Console.</div>
+            <div id="deploy-content" class="hoverContent">
+                <p>An application administrator deploys the application, which makes it available for other users in the InfoSphere BigInsights Console.</p>
+                <ol>
+                    <li>In the Applications tab, click the Manage subtab, and then find and select the application.</li>
+                    <li>Click Deploy above the list of applications.</li>
+                    <li>In the Deploy Applcation window, configure the required parameters and click Deploy.</li>
+                </ol>
+                <p>As part of the deploy step, you configure the locations of the external dictionaries and tables that are required by the extractor in this application. To learn more about the formats that are required, see *File formats for external artifacts*.</p>
+            </div>
+        </div>
+    </div>
 
-  /* Print icon change on hover*/
-  $('#print-icon').hover(
-    function(){
-      $(this).attr("src","./common/print_hover.png");
-      }, function(){
-      $(this).attr("src","./common/print_default.png");
-    }
-  );
+</body>
+<script>
+    /* Print icon change on hover*/
+    $('#print-icon').hover(
+        function() {
+            $(this).attr("src", "./common/print_hover.png");
+        },
+        function() {
+            $(this).attr("src", "./common/print_default.png");
+        }
+    );
 
 
-  /* inputdata
-  */
+    /* inputdata
+     */
 
-  $('#input-data').webuiPopover({url:'#inputdata-content',trigger:'hover'});
-  $('#local-data').webuiPopover({url:'#localdata-content',trigger:'hover'});
-  $('#creat-subset').webuiPopover({url:'#createsubset-content',trigger:'hover'});
-  $('#application').webuiPopover({url:'#application-content',trigger:'hover'});
-  $('#deploy').webuiPopover({url:'#deploy-content',trigger:'hover'});
-  </script>
+    $('#input-data').webuiPopover({
+        url: '#inputdata-content',
+        trigger: 'hover'
+    });
+    $('#local-data').webuiPopover({
+        url: '#localdata-content',
+        trigger: 'hover'
+    });
+    $('#creat-subset').webuiPopover({
+        url: '#createsubset-content',
+        trigger: 'hover'
+    });
+    $('#application').webuiPopover({
+        url: '#application-content',
+        trigger: 'hover'
+    });
+    $('#deploy').webuiPopover({
+        url: '#deploy-content',
+        trigger: 'hover'
+    });
+</script>
+
 </html>
