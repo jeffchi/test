@@ -205,6 +205,38 @@ arrow+lines
 }
 
 
+
+
+/*-----------------------------------------------------------------------------
+Print
+-----------------------------------------------------------------------------*/
+@media screen {
+
+.hoverContent {
+		display:none;
+		max-width: 300px;
+	}
+
+	.printTitle{
+		display: none;
+	}
+
+}
+
+@media print {
+
+.hoverContent {
+	max-width: 100%;
+}
+
+
+.printTitle{
+	font-size: 20pt;
+	color: blue;
+}
+
+}
+
 /*-----------------------------------------------------------------------------
 Responsive
 -----------------------------------------------------------------------------*/
@@ -237,6 +269,7 @@ Responsive
 		float: right;
 	}
 }
+
 
 @media all and (min-width: 1024px) {
 
